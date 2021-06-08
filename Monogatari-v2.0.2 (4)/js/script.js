@@ -80,14 +80,15 @@ monogatari.characters ({
 		color: '#5bcaff'
 	},
 	'c': {
-		name:'Caissière',
+		name:'Laura',
 		color:'#00bfff',
 		sprites: {
-            angry: 'ColèreC.png',
-            happy: 'HeureuseC.png',
-            normal: 'NeutreC.png',
-            sad: 'GenéC.png',
-            talk: 'ParleC.png'
+            angry: 'Colère.png',
+            happy: 'Heureuse.png',
+            normal: 'Normal.png',
+            sad: 'Contrarié.png',
+            talk: 'Dialogue.png',
+			shoked: 'Choquée.png'
         }
 	}
 });
@@ -185,6 +186,7 @@ monogatari.script ({
 	],
 
 'salutation':[
+	'show character c normal',
 	'a Tu repère ton interviewé déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 	'show character c talk',
 	'c Bonjour',
