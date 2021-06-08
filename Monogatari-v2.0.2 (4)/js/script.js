@@ -157,7 +157,7 @@ monogatari.script ({
 			'Choice':{
 				'Dialog':'a Où as-tu décidé de lui donner rendez-vous ?',
 				'Chez elle':{
-					'Text':'Chez elle',
+				'Text':'A l’université',
 					'Do': 'jump mauvaisEndroit'
 				},
 				
