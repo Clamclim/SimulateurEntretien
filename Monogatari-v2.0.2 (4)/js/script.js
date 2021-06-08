@@ -124,7 +124,7 @@ monogatari.script ({
 	'a Salut {{player.name}} Bievenue sur ce simulateur d’entretien!',
 		{
 			'Choice': {
-				'Dialog': 'a Est-ce que tu as déjà dû mené un entretien avant ?',
+				'Dialog': 'a Est-ce que tu as déjà dû dirigé un entretien avant ?',
 				'Yes': {
 					'Text': 'Oui',
 					'Do': 'jump Yes'
