@@ -189,7 +189,7 @@ monogatari.script ({
 		'show message moyenEndroit',
 		'show scene university with fadeIn',
 		'show character c normal',
-		'a Tu retrouves Laura dans une salle de classe.',
+		'a Tu retrouves Laura à la bibliothèque, elle t’attend déjà à une table proche de la sortie.',
 		'jump salutation',
 	],
 
