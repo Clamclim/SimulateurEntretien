@@ -2,14 +2,15 @@
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
-	'Help': {
-		title: 'Help',
-		subtitle: 'Some useful Links',
-		body: `
-			<p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
-			<p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
-		`
-	}
+	'mauvaisEndroit': {
+		title: 'Mauvais choix',
+		body: 'Ce choix pourrait gené la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
+	},
+
+	'moyenEndroit': {
+		title: 'Mauvais choix',
+		body: 'Laura pourrait ressentir une forme de violence symbolique en venant ici. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
+	},
 });
 
 // Define the notifications used in the game
@@ -126,7 +127,7 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} Bievenue sur ce simulateur d’entretien!',
+	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien!',
 		{
 			'Choice': {
 				'Dialog': 'a Est-ce que tu as déjà dû dirigé un entretien avant ?',
@@ -156,14 +157,13 @@ monogatari.script ({
 	],
 	
 'Intro':[
-	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé-e-s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec une caissière.',
-	'a Où as-tu décidé de lui donner rendez-vous ?',
+	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé-e-s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec Laura, une caissière qui a répondu à ton appel à témoignage.',
 		{
 			'Choice':{
-				'Dialog':'a Où as-tu décidé de lui donner rendez-vous ?',
+				'Dialog':'a Où as-tu décidé de donner rendez-vous à Laura ?',
 				'Chez elle':{
-				'Text':'A l’université',
-					'Do': 'jump mauvaisEndroit'
+				'Text':'À ton université',
+					'Do': 'jump moyenEndroit'
 				},
 				
 				'Chez toi' :{
@@ -181,18 +181,26 @@ monogatari.script ({
 	],
 	
 	'mauvaisEndroit':[
-		'Ce lieu est trop personnel',
+		'show message mauvaisEndroit',
+		'end',
+	],
+
+	'moyenEndroit':[
+		'show message moyenEndroit',
+		'show scene university with fadeIn',
+		'show character c normal',
+		'a Tu retrouves Laura dans une salle de classe.',
+		'jump salutation',
 	],
 
 	'bonEndroit':[
-		'Super',
+		'show scene coffee with fadeIn',
+		'show character c normal',
+		'a Tu repère Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 		'jump salutation'
 	],
 
 'salutation':[
-	'show scene coffee with fadeIn',
-	'show character c normal',
-	'a Tu repère ton interviewé déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 	'show character c talk',
 	'c Bonjour',
 ]
