@@ -69,6 +69,10 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
+	'street': 'rue.png',
+	'coffee': 'café.png',
+	'university': 'uni.png',
+	'house': 'maison.png',
 
 });
 
@@ -88,7 +92,7 @@ monogatari.characters ({
             normal: 'Normal.png',
             sad: 'Contrarié.png',
             talk: 'Dialogue.png',
-			shoked: 'Choquée.png'
+			shoked: 'Choquée.png',
         }
 	}
 });
@@ -96,7 +100,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #f7f6f6 with fadeIn',
+		'show scene street with fadeIn',
 		'show notification Welcome',
 		{
 			'Input': {
@@ -186,6 +190,7 @@ monogatari.script ({
 	],
 
 'salutation':[
+	'show scene coffee with fadeIn',
 	'show character c normal',
 	'a Tu repère ton interviewé déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 	'show character c talk',
