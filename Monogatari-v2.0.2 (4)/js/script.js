@@ -11,6 +11,11 @@ monogatari.action ('message').messages ({
 		title: 'Mauvais choix',
 		body: 'Laura pourrait ressentir une forme de violence symbolique en venant ici. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
 	},
+
+	'noPrécision':{
+		title:'Mauvaix choix',
+		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter toutes mauvaises surprises.',
+	},
 });
 
 // Define the notifications used in the game
@@ -161,8 +166,8 @@ monogatari.script ({
 		{
 			'Choice':{
 				'Dialog':'a Où as-tu décidé de donner rendez-vous à Laura ?',
-				'Chez elle':{
-				'Text':'À ton université',
+				'Université':{
+					'Text':'À ton université',
 					'Do': 'jump moyenEndroit'
 				},
 				
@@ -202,6 +207,48 @@ monogatari.script ({
 
 'salutation':[
 	'show character c talk',
-	'c Bonjour',
+	'c Bonjour !',
+	'show character c normal',
+	'Bonjour, merci à vous d’avoir accepter de partciper à cet entretien.',
+	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
+	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
+	{ 
+		'Choice':{
+			'Dialog': 'a Est-ce que tu veux lui rappeler ces précisions ?',
+			'précision':{
+				'Text': 'Oui',
+				'Do': 'jump précision',
+			},
+			'noPrécision':{
+				'Text': 'Non',
+				'Do': 'jump noPrécision',
+			},
+		}
+	}
+],
+
+'précision':[
+	'Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
+	'Est-ce que cela vous convient toujours ?',
+	'show character c talk',
+	'c Oui, pas de problème.',
+	'jump question1',
+],
+
+'noPrécision':[
+	'show message noPrécision',
+	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
+	'show character c shoked',
+	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
+	'Ah oui désolé de ne pas vous l’avoir redit.',
+	'jump question1',
+],
+
+'question1':[
+	'show character c normal',
+	'Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
+	'show character c talk',
+	'c Oui bien sûr, par ou commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+
 ]
 });
