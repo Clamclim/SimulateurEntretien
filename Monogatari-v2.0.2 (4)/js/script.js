@@ -111,9 +111,9 @@ monogatari.characters ({
 			shoked: 'Choquée.png',
         },
 	'p':{
-		name:'{{player.name}}',
+		name: '{player.name}',
 		color: 'green',
-	}
+	},
 	}
 });
 
@@ -223,7 +223,7 @@ monogatari.script ({
 	'show character c talk',
 	'c Bonjour !',
 	'show character c normal',
-	'p Bonjour, merci à vous d’avoir accepter de partciper à cet entretien.',
+	'p Bonjour, merci à vous d’avoir accepter de participer à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
 	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
 	{ 
@@ -262,7 +262,7 @@ monogatari.script ({
 	'show character c normal',
 	'p Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
 	'show character c talk',
-	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
 	'show character c normal',
 	{ 
 		'Choice':{
