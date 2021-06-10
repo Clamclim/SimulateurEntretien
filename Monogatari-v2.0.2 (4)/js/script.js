@@ -26,6 +26,11 @@ monogatari.action ('message').messages ({
 		title:'Mauvaix choix',
 		body:'Poser cette question à ce moment-là, n’est pas approprié. C’est une question personnelle très intrusive et dans ce contexte pourrait paraître jugeant sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
 	},
+
+	'multipleQuestion':{
+		title:'Mauvaix choix',
+		body: 'Il y a trop de questions, ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites peuvent rendre l’entretien moins brouillon.',
+	},
 });
 
 // Define the notifications used in the game
@@ -322,6 +327,32 @@ monogatari.script ({
 'question3':[
 	'show character c talk',
 	'c Au début je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
+	'show character c normal',
+	{
+		'Choice':{
+			'Dialog':'a Choisissez la prochaine question.',
+			'multipleQuestion':{
+				'Text':'Qu’est-ce que vous pensez des conditions de travail de la Cuup, est-ce que vous avez déjà eu des problèmes avec les clients ou vos collègues? Vous diriez que c’est quoi votre tâche la plus pénible de la journée?',
+				'Do':'jump multipleQuestion',
+			},
+			'question4':{
+				'Text':'Est-ce que vous pourriez essayer de nous décrire une journée type?',
+				'Do':'jump question4',
+			}
+		}
+	}
+],
+
+'multipleQuestion':[
+	'show message multipleQuestion',
+	'show character c sad',
+	'c Pardon, quel était le début de votre question déjà?',
+	'p Est-ce que vous pourriez essayer de nous décrire une journée type?',
+	'jump question4',
+],
+'question4':[
+	'show character c talk',
+	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas, les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
 
 ]
 });
