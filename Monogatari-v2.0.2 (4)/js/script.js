@@ -287,5 +287,36 @@ monogatari.script ({
 	'jump question2',
 ],
 
+'question2':[
+	'show character c normal',
+	{ 
+		'Choice':{
+			'Dialog': 'a Tu peux passer à la question suivante',
+			'personnelle1':{
+				'Text': 'À quel âge avez-vous eu votre enfant ?',
+				'Do': 'jump personnelle1',
+			},
+			'normal':{
+				'Text': 'Vous avez toujours travaillé à la caisse ?',
+				'Do': 'jump question3',
+			},
+		}
+	}
+],
 
+'personnelle1':[
+	'show message personnelle1',
+	'show character c angry',
+	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien',
+	'a Laura se lève et part.',
+	'hide character c',
+	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois',
+	'end',
+],
+
+'question3':[
+	'show character c talk',
+	'c Au début je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
+
+]
 });
