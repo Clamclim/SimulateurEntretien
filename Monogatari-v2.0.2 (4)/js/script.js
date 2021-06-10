@@ -21,6 +21,11 @@ monogatari.action ('message').messages ({
 		title:'Mauvaix choix',
 		body:'En demandant “pourquoi”, vous incitez la personne à se justifier et la réponse sera sûrement brève. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, vous obtiendrez donc sûrement plus d’informations (Ink, 2016).',
 	},
+
+	'personnelle1':{
+		title:'Mauvaix choix',
+		body:'Poser cette question à ce moment-là, n’est pas approprié. C’est une question personnelle très intrusive et dans ce contexte pourrait paraître jugeant sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
+	},
 });
 
 // Define the notifications used in the game
