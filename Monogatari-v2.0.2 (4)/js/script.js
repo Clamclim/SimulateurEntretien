@@ -16,6 +16,11 @@ monogatari.action ('message').messages ({
 		title:'Mauvaix choix',
 		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter toutes mauvaises surprises.',
 	},
+
+	'pourquoi':{
+		title:'Mauvaix choix',
+		body:'En demandant “pourquoi”, vous incitez la personne à se justifier et la réponse sera sûrement brève. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, vous obtiendrez donc sûrement plus d’informations (Ink, 2016).',
+	},
 });
 
 // Define the notifications used in the game
@@ -87,11 +92,11 @@ monogatari.assets ('scenes', {
 monogatari.characters ({
 	'a': {
 		name: 'Aide',
-		color: '#5bcaff'
+		color: 'blue'
 	},
 	'c': {
 		name:'Laura',
-		color:'#00bfff',
+		color:'violet',
 		sprites: {
             angry: 'Colère.png',
             happy: 'Heureuse.png',
@@ -99,7 +104,11 @@ monogatari.characters ({
             sad: 'Contrarié.png',
             talk: 'Dialogue.png',
 			shoked: 'Choquée.png',
-        }
+        },
+	'p':{
+		name:'{{player.name}}',
+		color: 'green',
+	}
 	}
 });
 
@@ -209,7 +218,7 @@ monogatari.script ({
 	'show character c talk',
 	'c Bonjour !',
 	'show character c normal',
-	'Bonjour, merci à vous d’avoir accepter de partciper à cet entretien.',
+	'p Bonjour, merci à vous d’avoir accepter de partciper à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
 	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
 	{ 
@@ -228,8 +237,8 @@ monogatari.script ({
 ],
 
 'précision':[
-	'Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
-	'Est-ce que cela vous convient toujours ?',
+	'p Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
+	'p Est-ce que cela vous convient toujours ?',
 	'show character c talk',
 	'c Oui, pas de problème.',
 	'jump question1',
@@ -240,15 +249,43 @@ monogatari.script ({
 	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
 	'show character c shoked',
 	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
-	'Ah oui désolé de ne pas vous l’avoir redit.',
+	'p Ah oui désolé de ne pas vous l’avoir redit.',
 	'jump question1',
 ],
 
 'question1':[
 	'show character c normal',
-	'Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
+	'p Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
 	'show character c talk',
-	'c Oui bien sûr, par ou commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'show character c normal',
+	{ 
+		'Choice':{
+			'Dialog': 'Passons à la question suivante.',
+			'pourquoi':{
+				'Text': 'Pourquoi êtes-vous devenue caissière ?',
+				'Do': 'jump pourquoi',
+			},
+			'comment':{
+				'Text': 'Comment êtes-vous devenue caissière ?',
+				'Do': 'jump comment',
+			},
+		}
+	}
+],
 
-]
+'pourquoi':[
+	'show message pourquoi',
+	'show character c talk',
+	'c J’avais besoin d’un travail pour payer mon loyer.',
+	'jump question2',
+],
+
+'comment':[
+	'show character c talk',
+	'c J’avais postulé chez Cuup car je ne me voyais pas bosser en usine, le secteur du commerce me convient mieux. Comme j’ai juste fait le gymnase voie diplôme, je ne pouvais pas trop choisir. Dans le commercial, Y’a du contact social, au moins.',
+	'jump question2',
+],
+
+
 });
