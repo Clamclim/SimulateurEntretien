@@ -57,6 +57,26 @@ monogatari.action ('message').messages ({
 		body: 'Si on s’intéresse à un métier, il peut être utile de se renseigner avec de la littérature sur le dit-métier pour avoir une idée de certains mots de jargon basique et des problématiques transversales (Beaud et Weber, 2003).',
 	},
 
+	'directif':{
+		title:'Imposition de la thématique',
+		body: 'Parfois les gens n’ont pas le même bagage que vous pour décrire leur situation. Ici vous suggérer fortement une manière de répondre de votre interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+	},
+
+	'avis':{
+		title:'Pas de débat',
+		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec vos idéaux, l’entretien n’est pas un lieu de débat, vous êtes ici pour écouter ce que la personne a à vous dire et non juger ses choix de vie. Vous serez au courant pour la prochaine fois',
+	},
+
+	'message_id':{
+		title:'Mauvaix choix',
+		body: '',
+	},
+
+	'message_id':{
+		title:'Mauvaix choix',
+		body: '',
+	},
+
 	'message_id':{
 		title:'Mauvaix choix',
 		body: '',
@@ -506,5 +526,71 @@ monogatari.script ({
 	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. A force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
 	'c Ça s’appelle je crois dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
+	{
+		'Choice':{
+		'Dialog':'a C’est une bonne occasion pour rebondir sur une question sur son rapport à la hiérarchie.',
+			'directif':{
+				'Text':'Vous voulez dire que vous êtes exploitée ?',
+				'Do':'jump directif',
+			},
+			'nonDirectif':{
+				'Text':'À propos de vos supérieurs, comment qualifieriez- vous votre rapport avec eux ?',
+				'Do':'jump nonDirectif',
+			},
+		}
+	}
+],
+
+'directif':[
+	'show message directif',
+	'show character c shoked',
+	'c Non, non, je ne pense pas. J’entretiens de très bonnes relations avec la plupart d’entre eux. C’est normal ce qu’il nous demande.',
+	'jump question9',
+],
+
+'nonDirectif':[
+	'show character c talk',
+	'c C’est vrai que des fois, ils peuvent nous mettre une certaine pression pour s’assurer qu’on travaille assez vite.',
+	'c Des fois on a presque l’impression qu’ils profitent des exigences des clients pour nous demander de travailler plus. Quand il y a beaucoup de gens, c’est plus difficile de se justifier pour prendre une pause alors qu’on y a droit !',
+	'jump question9',
+],
+
+'question9':[
+	'show character c normal',
+	'p Et sinon est-ce que vous êtes syndiquée ou bien est-ce que certaines de vos collègues le sont ?',
+	'show character c talk',
+	'c Non, je n’ai jamais ressenti le besoin de me syndiquer et je ne connais aucune de mes collègues qui le soit...',
+	'show character c normal',
+	{
+		'Choice':{
+		'Dialog':'a Tu es toi-même dans un syndicat et tu penses que c’est essentiel...',
+			'avis':{
+				'Text':'Donner ton avis',
+				'Do':'jump avis',
+			},
+			'nonAvis':{
+				'Text':'Demander de développer',
+				'Do':'jump question10',
+			},
+		}
+	}
+],
+
+'avis':[
+	'p Vous savez c’est essentiel de se syndiquer pour revendiquer de meilleures conditions de travail.',
+	'show character c shoked',
+	'c euh mais je gagne déjà pas beaucoup d’argent, ça m’embête de cotiser.',
+	'p Vous ne pensez pas assez au collectif !',
+	'show character c angry',
+	'Pardon mais je vous permets pas de me dire ce genre de choses !',
+	'a Laura se lève et quitte la salle.',
+	'show message avis',
+	'end',
+],
+
+'question10':[
+	'p Est-ce que vous envisagez de vous syndiquer ?',
+	'show character c talk',
+	'c J’y ai jamais vraiment pensé je dois avouer. Et puis, c’est déjà assez compliqué de finir les fins de mois donc si je devais cotiser en plus... ',
 ]
 });
