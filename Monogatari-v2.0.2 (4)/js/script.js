@@ -31,6 +31,41 @@ monogatari.action ('message').messages ({
 		title:'Mauvaix choix',
 		body: 'Il y a trop de questions, ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites peuvent rendre l’entretien moins brouillon.',
 	},
+
+	'relance':{
+		title:'Mauvaix choix',
+		body: 'Parfois, il suffit de laisser du temps à la personne pour qu’elle trouve ses mots. Sauvayre (2013) propose d’identifier les silences de réflexion et ceux de fin de discours.',
+	},
+
+	'rien':{
+		title:'Un sourire pour encourager',
+		body: 'Des encouragements à continuer peuvent aider la personne à approfondir.Sauvayre (2013) élabore sur les réactions face aux silences.',
+	},
+
+	'scientifique':{
+		title:'Mauvais choix',
+		body: 'Les questionnements des enquêteurs ne sont pas les soucis quotidiens des enquêté.e.s, la reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
+	},
+
+	'horsSujet':{
+		title:'Hors sujet',
+		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu  attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
+	},
+
+	'nonSavoir':{
+		title:'Manque de recherches en amont',
+		body: 'Si on s’intéresse à un métier, il peut être utile de se renseigner avec de la littérature sur le dit-métier pour avoir une idée de certains mots de jargon basique et des problématiques transversales (Beaud et Weber, 2003).',
+	},
+
+	'message_id':{
+		title:'Mauvaix choix',
+		body: '',
+	},
+
+	'message_id':{
+		title:'Mauvaix choix',
+		body: '',
+	},
 });
 
 // Define the notifications used in the game
@@ -116,7 +151,7 @@ monogatari.characters ({
 			shoked: 'Choquée.png',
         },
 	'p':{
-		name: '{player.name}',
+		name: 'Toi',
 		color: 'green',
 	},
 	}
@@ -353,7 +388,123 @@ monogatari.script ({
 'question4':[
 	'show character c talk',
 	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas, les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
+	'show character c normal',
+	{
+		'Choice':{
+			'Dialog':'...',
+			'sourire':{
+				'Text':'*Sourire et hocher la tête*',
+				'Do':'jump question5',
+			},
+			'relance':{
+				'Text':'Est-ce que vous auriez un exemple?',
+				'Do':'jump relance',
+			},
+			'rien':{
+				'Text':'*Ne rien manifester*',
+				'Do':'jump rien',
+			}
+		}
+	}
+],
+
+'relance':[
+	'show message relance',
+	'jump question5',
+],
+'rien':[
+	'show message rien',
+	'jump question5',
+],
+
+'question5':[
+	'show character c talk',
+	'c … ranger les articles erronés des clients distraits, mettre en ordre des rayons, mais ça, ça dépend en plus des jours, pas tous les jours ont le droit au même effectif… Ils font toujours en sorte qu’on doive courir quoi.',
+	'show character c happy',
+	'show character c normal',
+	'c Et puis, évidemment, les heures pleines, on scanne à plein régime.',
+	'p Merci pour les précisions, c’est justement un des points que nous souhaitions développer dans notre entretien.',
+	{
+		'Choice':{
+			'Dialog':'a Sélectionne la question.',
+			'scientifique':{
+				'Text':'Comment vivez-vous ce régime néolibéral de management néoclassique?',
+				'Do':'jump scientifique',
+			},
+			'vulgarisée':{
+				'Text':'Comment vivez-vous au quotidien cette course perpétuelle?',
+				'Do':'jump question6',
+			},
+		}
+	}
+],
+
+'scientifique':[
+	'show message scientifique',
+	'show character c sad',
+	'c Je ne suis pas sûr d’avoir bien compris la question, est-ce que vous pouvez répéter?',
+	'p Comment vivez-vous au quotidien cette course perpétuelle ?',
+	'jump question6',
+],
+
+'question6':[
+	'show character c talk',
+	'c C’est éreintant! On finit les journées sur les talons, avec les collègues on se dit souvent qu’être un peu plus ça ne les ferait pas passer dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
+	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai le courage de faire plus que la promener pour ces besoins.',
+	{
+		'Choice':{
+			'Dialog':'a C’est le moment de relancer.',
+			'bonSujet':{
+				'Text':'Vous avez remarqué certaines pénibilités communes avec vos collègues?',
+				'Do':'jump question7',
+			},
+			'horsSujet':{
+				'Text':'Ah oui, comment s’appelle votre chien ?',
+				'Do':'jump horsSujet',
+			},
+		}
+	}
+],
+
+'horsSujet':[
+	'show message horsSujet',
+	'show character c happy',
+	'c Skippy, c’est une Berger Eurasiatique de pure race.',
+	'show character c normal',
+	'p Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
+	'jump question7',
+],
+
+'question7':[
+	'show character c talk',
+	'c Oui bien sûr, les dos bloqués on connaît toutes. Il y a également l’immanquable tendinite de la caissière que j’ai eu l’année passée par exemple.',
+	'show character c normal',
+	{
+		'Choice':{
+			'Dialog':'a Tendinite de caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
+			'Savoir':{
+				'Text':'Pour être sûr, c’est bien une tendinite du poignet dont il s’agit?',
+				'Do':'jump question8',
+			},
+			'nonSavoir':{
+				'Text':'Ah c’est fou, j’aurai jamais pensé que caissier avait ses propres problèmes de santé.',
+				'Do':'jump nonSavoir',
+			},
+		}
+	}
 
 ],
-'bonjour':[],
+
+'nonSavoir':[
+	'show message nonSavoir',
+	'show character c sad',
+	'jump question8',
+],
+
+'question8':[
+	'show character c talk',
+	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. A force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
+	'c Ça s’appelle je crois dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
+	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
+]
 });
