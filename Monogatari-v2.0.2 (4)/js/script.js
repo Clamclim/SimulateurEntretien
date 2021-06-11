@@ -156,6 +156,21 @@ monogatari.action ('canvas').objects ({
 
 // Credits of the people involved in the creation of this awesome game
 monogatari.configuration ('credits', {
+"Développement":{
+	"Antonin Wyss":"Clémence Danesi", 
+},
+"Bibliographie":{
+	"Beaud, S. & Weber, F. (2013). Guide de l’enquête de terrain : produire et analyser des données ethnographiques. Paris: La Découverte.":"",
+	"Becker, H. (2002). Les ficelles du métier. Comment conduire sa recherche en sciences sociales. Paris: La Découverte.":"",
+	"Bernard. S. (2011). Être caissière (caissier). Lyon: Éditions Lieux Dits, collection Être.":"",
+	"Blanchet, A. & al. (1985). L’entretien dans les sciences sociales. L’écoute, la parole et le sens.  Paris: Bordas.":"",
+	"Quivy, R. & Van Campenhoudt, L. (2017). Manuel de recherche en sciences sociales. Paris: Dunod.":"",
+	"Pinçon, M. & Pinçon-Charlot, M. (2005). Voyage en grande bourgeoisie: Journal d’enquête. Paris cedex 14, France: Presses Universitaires de France.":"",
+	"Laurens, S. (2007). 'Pourquoi et comment poser le questions qui fâchent ?' Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. Genèses, n° 69, p. 112- 127.":"",
+	"Mayer, N. (1995). L'entretien selon Pierre Bourdieu. Analyse critique de La misère du monde. Revue française de sociologie, 36-2. pp. 355-370.":"",
+	"Sauvayre, R. (2013). Chapitre 2. La réalisation de l’entretien : le « terrain ». Dans : , R. Sauvayre, Les méthodes de l'entretien en sciences sociales (pp. 49-101). Paris: Dunod.":"",
+	"Waelli, M. (2009). Caissière... et après : Une enquête parmi les travailleurs de la grande distribution. Paris cedex 14, France: Presses Universitaires de France.":"",
+},
 
 });
 
@@ -206,6 +221,10 @@ monogatari.characters ({
 		name: 'Aide',
 		color: 'blue'
 	},
+	'b':{
+		name: '{{player.name}} (Toi)',
+		color: 'green',
+	},
 	'c': {
 		name:'Laura',
 		color:'violet',
@@ -217,10 +236,6 @@ monogatari.characters ({
             talk: 'Dialogue.png',
 			shoked: 'Choquée.png',
         },
-	'p':{
-		name: 'Toi',
-		color: 'green',
-	},
 	}
 });
 
@@ -330,7 +345,7 @@ monogatari.script ({
 	'show character c talk',
 	'c Bonjour !',
 	'show character c normal',
-	'p Bonjour, merci à vous d’avoir accepter de participer à cet entretien.',
+	'b Bonjour, merci à vous d’avoir accepter de participer à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
 	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
 	{ 
@@ -349,8 +364,8 @@ monogatari.script ({
 ],
 
 'précision':[
-	'p Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
-	'p Est-ce que cela vous convient toujours ?',
+	'b Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
+	'b Est-ce que cela vous convient toujours ?',
 	'show character c talk',
 	'c Oui, pas de problème.',
 	'jump question1',
@@ -361,19 +376,19 @@ monogatari.script ({
 	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
 	'show character c shoked',
 	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
-	'p Ah oui désolé de ne pas vous l’avoir redit.',
+	'b Ah oui désolé de ne pas vous l’avoir redit.',
 	'jump question1',
 ],
 
 'question1':[
 	'show character c normal',
-	'p Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
+	'b Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
 	'show character c talk',
 	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
 	'show character c normal',
 	{ 
 		'Choice':{
-			'Dialog': 'Passons à la question suivante.',
+			'Dialog': 'a Passons à la question suivante.',
 			'pourquoi':{
 				'Text': 'Pourquoi êtes-vous devenue caissière ?',
 				'Do': 'jump pourquoi',
@@ -449,7 +464,7 @@ monogatari.script ({
 	'show message multipleQuestion',
 	'show character c sad',
 	'c Pardon, quel était le début de votre question déjà?',
-	'p Est-ce que vous pourriez essayer de nous décrire une journée type?',
+	'b Est-ce que vous pourriez essayer de nous décrire une journée type?',
 	'jump question4',
 ],
 'question4':[
@@ -490,7 +505,7 @@ monogatari.script ({
 	'show character c happy',
 	'show character c normal',
 	'c Et puis, évidemment, les heures pleines, on scanne à plein régime.',
-	'p Merci pour les précisions, c’est justement un des points que nous souhaitions développer dans notre entretien.',
+	'b Merci pour les précisions, c’est justement un des points que nous souhaitions développer dans notre entretien.',
 	{
 		'Choice':{
 			'Dialog':'a Sélectionne la question.',
@@ -510,7 +525,7 @@ monogatari.script ({
 	'show message scientifique',
 	'show character c sad',
 	'c Je ne suis pas sûr d’avoir bien compris la question, est-ce que vous pouvez répéter?',
-	'p Comment vivez-vous au quotidien cette course perpétuelle ?',
+	'b Comment vivez-vous au quotidien cette course perpétuelle ?',
 	'jump question6',
 ],
 
@@ -538,7 +553,7 @@ monogatari.script ({
 	'show character c happy',
 	'c Skippy, c’est une Berger Eurasiatique de pure race.',
 	'show character c normal',
-	'p Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
+	'b Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 	'jump question7',
 ],
 
@@ -604,7 +619,7 @@ monogatari.script ({
 
 'question9':[
 	'show character c normal',
-	'p Et sinon est-ce que vous êtes syndiquée ou bien est-ce que certaines de vos collègues le sont ?',
+	'b Et sinon est-ce que vous êtes syndiquée ou bien est-ce que certaines de vos collègues le sont ?',
 	'show character c talk',
 	'c Non, je n’ai jamais ressenti le besoin de me syndiquer et je ne connais aucune de mes collègues qui le soit...',
 	'show character c normal',
@@ -624,10 +639,10 @@ monogatari.script ({
 ],
 
 'avis':[
-	'p Vous savez c’est essentiel de se syndiquer pour revendiquer de meilleures conditions de travail.',
+	'b Vous savez c’est essentiel de se syndiquer pour revendiquer de meilleures conditions de travail.',
 	'show character c shoked',
 	'c euh mais je gagne déjà pas beaucoup d’argent, ça m’embête de cotiser.',
-	'p Vous ne pensez pas assez au collectif !',
+	'b Vous ne pensez pas assez au collectif !',
 	'show character c angry',
 	'Pardon mais je vous permets pas de me dire ce genre de choses !',
 	'a Laura se lève et quitte la salle.',
@@ -636,14 +651,13 @@ monogatari.script ({
 ],
 
 'question10':[
-	'p Est-ce que vous envisagez de vous syndiquer ?',
+	'b Est-ce que vous envisagez de vous syndiquer ?',
 	'show character c talk',
 	'c J’y ai jamais vraiment pensé je dois avouer. Et puis, c’est déjà assez compliqué de finir les fins de mois donc si je devais cotiser en plus... ',
 	'jump question11'
 ],
 'question11':[
-	'show character c normal',
-	
+	'show character c normal',	
 	{
 		'Choice':{
 		'Dialog':'a Question suivante',
@@ -672,7 +686,7 @@ monogatari.script ({
 
 'question12':[
 	'show character c normal',
-	'p Est-ce que vous vous souvenez d’une situation qui a été particulièrement difficile pour vous ?',
+	'b Est-ce que vous vous souvenez d’une situation qui a été particulièrement difficile pour vous ?',
 	
 	{
 		'Choice':{
@@ -704,8 +718,8 @@ monogatari.script ({
 
 'question13':[
 	'show character c normal',
-	'p merci de partager ça ici en tout cas... ',
-	'p Est-ce que vous auriez aussi une bonne anecdote?',
+	'b merci de partager ça ici en tout cas... ',
+	'b Est-ce que vous auriez aussi une bonne anecdote?',
 	'show character c talk',
 	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois et il y a des vraies relations qui peuvent se créer... voilà',
 	{
@@ -727,7 +741,7 @@ monogatari.script ({
 	'show message sourire13',
 	'show character c talk',
 	'c Heu, voilà, j’ai rien à rajouter',
-	'p Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
+	'b Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
 	'jump question 14',
 
 ],
@@ -735,8 +749,7 @@ monogatari.script ({
 
 'question14':[
 	'show character c talk',
-	'c Faut pas faire attention à eux, à ceux qui disent pas bonjour. Ils peuvent toujours râler, si on peut pas aller plus vite, on peut pas. Avec le temps on s’habitue et on s’en fiche qu’ils râlent.',
-	
+	'c Faut pas faire attention à eux, à ceux qui disent pas bonjour. Ils peuvent toujours râler, si on peut pas aller plus vite, on peut pas. Avec le temps on s’habitue et on s’en fiche qu’ils râlent.',	
 	{
 		'Choice':{
 		'Dialog':'a Comment réagis-tu?',
@@ -770,7 +783,7 @@ monogatari.script ({
 
 'question15':[
 	'show character c normal',
-	'p D’accord, on va pouvoir passer à la question suivante. ',
+	'b D’accord, on va pouvoir passer à la question suivante. ',
 	
 	{
 		'Choice':{
@@ -860,8 +873,7 @@ monogatari.script ({
 
 'question17':[
 	'show character c normal',
-	'a Nous arrivons à la fin de l’entretien.',
-	
+	'a Nous arrivons à la fin de l’entretien.',	
 	{
 		'Choice':{
 			'brutend':{
@@ -869,7 +881,7 @@ monogatari.script ({
 				'Do':'jump brutend',
 			},
 			'fincool':{
-				'Text':'vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question?',
+				'Text':'Vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question?',
 				'Do':'jump fincool',
 			},
 		}
@@ -880,20 +892,21 @@ monogatari.script ({
 	'show message brutend',
 	'show character c talk',
 	'c Merci à vous, j’espère que mes réponses auront pu vous aider.',
-	'p Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
 	'jump reflexivité',
 ],
 'fincool':[
 	'show character c talk',
 	'c Non je ne vois pas. Pour moi, c’est tout bon.',
-	'p Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement.',
+	'a Laura se lève et part. Tu vas aussi pouvoir rentrer chez toi.',
 	'jump reflexivité',
 ],
 
 'reflexivité':[
-	'show scene street with fadeIn',
+	'show scene house with fadeIn',
+	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
 	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
-	
 	{
 		'Choice':{
 			'refle1':{
@@ -928,8 +941,7 @@ monogatari.script ({
 
 
 'reflexivité2':[
-	'a Veux-tu savoir ce qu’en dit Becker (2002) sur le sujet dans les ficelles du métier?',
-	
+	'a Veux-tu savoir ce qu’en dit Becker (2002) sur le sujet dans "Les ficelles du métier?"',
 	{
 		'Choice':{
 			'nonbecker':{
