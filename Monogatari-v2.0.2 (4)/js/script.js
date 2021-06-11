@@ -8,8 +8,8 @@ monogatari.action ('message').messages ({
 	},
 
 	'moyenEndroit': {
-		title: 'Mauvais choix',
-		body: 'Laura pourrait ressentir une forme de violence symbolique en venant ici. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
+		title: 'Intimidant',
+		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
 	},
 
 	'noPrécision':{
@@ -18,8 +18,8 @@ monogatari.action ('message').messages ({
 	},
 
 	'pourquoi':{
-		title:'Mauvaix choix',
-		body:'En demandant “pourquoi”, vous incitez la personne à se justifier et la réponse sera sûrement brève. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, vous obtiendrez donc sûrement plus d’informations (Ink, 2016).',
+		title:'Comment et pourquoi',
+		body:'En demandant “pourquoi”, vous incitez la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, vous obtiendrez donc sûrement plus d’informations (Ink, 2016).',
 	},
 
 	'personnelle1':{
@@ -28,12 +28,12 @@ monogatari.action ('message').messages ({
 	},
 
 	'multipleQuestion':{
-		title:'Mauvaix choix',
+		title:'Trop confus',
 		body: 'Il y a trop de questions, ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites peuvent rendre l’entretien moins brouillon.',
 	},
 
 	'relance':{
-		title:'Mauvaix choix',
+		title:'Laisser le temps',
 		body: 'Parfois, il suffit de laisser du temps à la personne pour qu’elle trouve ses mots. Sauvayre (2013) propose d’identifier les silences de réflexion et ceux de fin de discours.',
 	},
 
@@ -43,13 +43,13 @@ monogatari.action ('message').messages ({
 	},
 
 	'scientifique':{
-		title:'Mauvais choix',
+		title:'Les mots du chercheur',
 		body: 'Les questionnements des enquêteurs ne sont pas les soucis quotidiens des enquêté.e.s, la reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
 	},
 
 	'horsSujet':{
 		title:'Hors sujet',
-		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu  attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
+		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
 	},
 
 	'nonSavoir':{
@@ -67,19 +67,66 @@ monogatari.action ('message').messages ({
 		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec vos idéaux, l’entretien n’est pas un lieu de débat, vous êtes ici pour écouter ce que la personne a à vous dire et non juger ses choix de vie. Vous serez au courant pour la prochaine fois',
 	},
 
-	'message_id':{
-		title:'Mauvaix choix',
-		body: '',
+	'GenreF':{
+		title:'Confidence?',
+		body: 'Aurais-tu eu le même message si tu avais été une autre personne?',
 	},
 
-	'message_id':{
-		title:'Mauvaix choix',
-		body: '',
+	'GenreM':{
+		title:'Hésitation?',
+		body: 'Aurais-tu eu le même message si tu avais été une autre personne?',
 	},
 
-	'message_id':{
+	'sourire13':{
 		title:'Mauvaix choix',
-		body: '',
+		body: 'Le "voilà" est un bon indicateur de fin de discours.',
+	},
+
+	'conseil14':{
+		title:'Mauvaix choix',
+		body: ' Ce n’est pas le rôle du chercheur de donner des conseils sur ce qu’il pense être bien. Une écoute non jugeante des actions de l’interviewé-e est à privilégier.',
+	},
+
+	'excuse15':{
+		title:'oser expliquer',
+		body: 'Pour ce genre d’informations utiles et dont la divulgation est de toute façon prohibée, il peut être bon de préciser ses intentions',
+	},
+
+	'exigence15':{
+		title:'quel tact',
+		body: 'C’est vrai, mais lorsque la personne se montre réticente, essayer d’arrondir les angles est utile. Il ne faut pas oublier que ce n’est pas un interrogatoire et que la personne prend de son temps pour nous aider. Elle ne nous doit rien.',
+	},
+
+	'indiscret15':{
+		title:'la pertinance de les informations',
+		body: 'Sans justification et lors d’un premier entretien, cela s’apparente au ragot et non à l’entretien sociologique',
+	},
+
+
+
+	'brutend':{
+		title:'le tact',
+		body: 'attention il est toujours bienvenu de demander à son interviewé s’il veut préciser quelque chose sur une question ou s’il a l’impression de ne pas avoir pu s’exprimer sur un sujet. ( voir par exemple Beaud et Weber (2003) ou Becker (2002))',
+	},
+
+	'refle1':{
+		title:'Le temps long de l’enquête',
+		body: 'en effet, il est important de mener plusieurs entretiens pour approfondir le rapport entre vous et affiner les informations pertinentes. La confiance prend du temps, tout comme l’enquête de terrain',
+	},
+
+	'refle2':{
+		title:'Défaitisme',
+		body: 'Effectivement, tu pourrais surement faire mieux, mais il ne faut pas oublier que c’était la première caissière que tu rencontres pour ton projet, qu’elle ne représente pas la Caissière et que le temps pour un entretien singulier n’est pas illimité',
+	},
+
+	'refle3':{
+		title:'La finitude du monde',
+		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie social est tout de même possible',
+	},
+
+	'nonbecker':{
+		title:'missclick',
+		body: 'ça arrive même au meilleur, pas de soucis, voici le texte tant attendu',
 	},
 
 	'message_id':{
@@ -592,5 +639,339 @@ monogatari.script ({
 	'p Est-ce que vous envisagez de vous syndiquer ?',
 	'show character c talk',
 	'c J’y ai jamais vraiment pensé je dois avouer. Et puis, c’est déjà assez compliqué de finir les fins de mois donc si je devais cotiser en plus... ',
-]
+	'jump question11'
+],
+'question11':[
+	'show character c normal',
+	
+	{
+		'Choice':{
+		'Dialog':'a Question suivante',
+			'choixmultiple11A':{
+				'Text':'Comment se passent les relations avec les clients ?',
+				'Do':'jump choixmultiple11A',
+			},
+			'choixmultiple11B':{
+				'Text':'Comment se passent les relations entre collègues ?',
+				'Do':'jump choixmultiple11B',
+			},
+		}
+	}
+],
+
+'choixmultiple11A':[
+	'show character c talk',
+	'c Ça dépend certains sont très polis mais dès qu’ils s’impatientent parce qu’il y a du monde à la caisse, ça devient compliqué. Que l’on fasse une erreur ou pas, on se sent coupable de faire attendre le client. La semaine dernière j’ai craqué, je n’en pouvais plus, j’avais pleins de problèmes en caisse et les clients ont été odieux, ils sont impatients, vous insultent, râlent et c’est très dur à supporter.',
+	'jump question12',
+],
+'choixmultiple11B':[
+	'show character c talk',
+	'c C’est chouette. On se soutient beaucoup parmi, quand il ny a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués.',
+	'jump question12',
+],
+
+'question12':[
+	'show character c normal',
+	'p Est-ce que vous vous souvenez d’une situation qui a été particulièrement difficile pour vous ?',
+	
+	{
+		'Choice':{
+		'Dialog':'a *tu vois Laura te regarder et réfléchir deux secondes... te perçoit-elle comme ',
+			'GenreF':{
+				'Text':'a une femme?',
+				'Do':'jump GenreF',
+			},
+			'GenreM':{
+				'Text':'a un homme?',
+				'Do':'jump GenreM',
+			},
+		}
+	}
+],
+
+'GenreF':[
+	'show character c talk',
+	'c Récemment, j’ai un client qui est resté pendant 10 minutes devant ma caisse. Il me faisait des commentaires vraiment déplacés et je pouvais rien dire sinon ça aurait créé un scandale. Il y a toujours des gens qui profitent de la situation pour vous harceler, moi j’ai souvent le droit à des remarques sur mon physique.',
+	'show message GenreF',
+	'jump question13',
+],
+'GenreM':[
+	'show character c talk',
+	'c Récemment, une mère et son enfant passent à ma caisse, et là la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame!” Je me suis sentie dévalorisée…',
+	'show message GenreM',
+	'jump question13',
+],
+
+'question13':[
+	'show character c normal',
+	'p merci de partager ça ici en tout cas... ',
+	'p Est-ce que vous auriez aussi une bonne anecdote?',
+	'show character c talk',
+	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois et il y a des vraies relations qui peuvent se créer... voilà',
+	{
+		'Choice':{
+		'Dialog':'a ',
+			'sourire13':{
+				'Text':'*Vous souriez et hôcher la tête*',
+				'Do':'jump sourire13',
+			},
+			'relance13':{
+				'Text':'Et comment réagissez-vous quand il y a des clients désagréables ?',
+				'Do':'jump question14',
+			},
+		}
+	}
+],
+
+'sourire13':[
+	'show message sourire13',
+	'show character c talk',
+	'c Heu, voilà, j’ai rien à rajouter',
+	'p Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
+	'jump question 14',
+
+],
+
+
+'question14':[
+	'show character c talk',
+	'c Faut pas faire attention à eux, à ceux qui disent pas bonjour. Ils peuvent toujours râler, si on peut pas aller plus vite, on peut pas. Avec le temps on s’habitue et on s’en fiche qu’ils râlent.',
+	
+	{
+		'Choice':{
+		'Dialog':'a Comment réagis-tu?',
+			'oki14':{
+				'Text':'Ok, je vois.',
+				'Do':'jump question15',
+			},
+			'conseil14':{
+				'Text':'Vous pourriez quand même leur dire quelque chose ?',
+				'Do':'jump conseil14',
+			},
+			'relance14':{
+				'Text':'Pourquoi est-ce que vous ne préférez rien dire ?',
+				'Do':'jump relance14',
+			},
+		}
+	}
+],
+
+'conseil14':[
+	'show message relance14',
+	'show character c talk',
+	'c bof, ça prend du temps, hein.',
+	'jump question15',
+],
+'relance14':[
+	'show character c talk',
+	'c C’est une manière de me protéger et d’économiser mon énergie, je n’aurais pas le temps ni la force de toujours reprendre les gens malpolis.',
+	'jump question15',
+],
+
+'question15':[
+	'show character c normal',
+	'p D’accord, on va pouvoir passer à la question suivante. ',
+	
+	{
+		'Choice':{
+		'Dialog':'a que souhaites-tu aborder?',
+			'indiscret15':{
+				'Text':'Est-ce qu’il y a des collègues particuliers que vous n’aimez pas?',
+				'Do':'jump indiscret15',
+			},
+			'salaire15':{
+				'Text':'Quel est votre salaire ?',
+				'Do':'jump salaire15',
+			},
+		}
+	}
+],
+
+'indiscret15':[
+	'show message indiscret15',
+	'end',
+],
+'salaire15':[
+	'show character c contrariée',
+	'c Est-ce que c’est pas un peu trop personnel comme question?',
+	{
+		'Choice':{
+		'Dialog':'elle est inconfortable...',
+			'excuse15':{
+				'Text':'Désolé(e), ce n’était pas l’intention.',
+				'Do':'jump excuse16',
+			},
+			'justification15':{
+				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentielle, mais vous n’êtes pas obligée d’y répondre',
+				'Do':'jump justification15',
+			},
+			'exigence15':{
+				'Text':'C’est une information essentielle dans notre situation.',
+				'Do':'jump exigence15',
+			},
+		},
+	},
+	
+],
+'excuse15': [
+		'show message excuse15',
+		'jump question16',
+	],
+'justification15': [
+		'show character c talk',
+		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
+		'jump question16',
+	],
+'exigence15': [
+		'show message exigence15',
+		'show character c contrariée',
+		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
+		'jump question16',
+	],
+
+'question16':[
+	'show character c normal',
+	'a Quelle question veux-tu poser?',
+	
+	{
+		'Choice':{
+			'QCM16A':{
+				'Text':'Est-ce que vous vous voyez encore à ce poste dans 10 ans ?',
+				'Do':'jump QCM16A',
+			},
+			'QCM16B':{
+				'Text':'Vous avez des craintes liées à votre profession actuellement ?',
+				'Do':'jump QCM16B',
+			},
+		}
+	}
+],
+
+'QCM16A':[
+	'show character c talk',
+	'c C’est vrai que j’aimerai bien évoluer vers un autre poste avec plus de responsabilités, mais là je vais prochainement être nommée cheffe de file des caisses donc c’est déjà bien.',
+	'jump question17',
+],
+'QCM16B':[
+	'show character c talk',
+	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer pour mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
+	'jump question17',
+],
+
+'question17':[
+	'show character c normal',
+	'a Nous arrivons à la fin de l’entretien.',
+	
+	{
+		'Choice':{
+			'brutend':{
+				'Text':'Merci de votre participation, toute mes questions ont été posées!',
+				'Do':'jump brutend',
+			},
+			'fincool':{
+				'Text':'vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question?',
+				'Do':'jump fincool',
+			},
+		}
+	}
+],
+
+'brutend':[
+	'show message brutend',
+	'show character c talk',
+	'c Merci à vous, j’espère que mes réponses auront pu vous aider.',
+	'p Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'jump reflexivité',
+],
+'fincool':[
+	'show character c talk',
+	'c Non je ne vois pas. Pour moi, c’est tout bon.',
+	'p Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'jump reflexivité',
+],
+
+'reflexivité':[
+	'show scene street with fadeIn',
+	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
+	
+	{
+		'Choice':{
+			'refle1':{
+				'Text':'Il me semble avoir fait au mieux, le sujet ne peut pas s’épuiser aussi rapidement',
+				'Do':'jump refle1',
+			},
+			'refle2':{
+				'Text':'Si j’avais mieux mené l’entretien, ça ne serait pas le cas',
+				'Do':'jump refle2',
+			},
+			'refle3':{
+				'Text':'Je ne peux rien y faire, on ne saura jamais tout de toute façon',
+				'Do':'jump refle3',
+			},
+		}
+	}
+],
+
+'refle1':[
+	'show message refle1',
+	'jump reflexivité2',
+],
+'refle2':[
+	'show message refle2',
+	'jump reflexivité2',
+],
+
+'refle3':[
+	'show message refle3',
+	'jump reflexivité2',
+],
+
+
+'reflexivité2':[
+	'a Veux-tu savoir ce qu’en dit Becker (2002) sur le sujet dans les ficelles du métier?',
+	
+	{
+		'Choice':{
+			'nonbecker':{
+				'Text':'Non',
+				'Do':'jump nonbecker',
+			},
+			'ouibecker':{
+				'Text':'Oui',
+				'Do':'jump ouibecker',
+			},
+		}
+	}
+],
+
+'nonbecker':[
+	'show message nonbecker',
+	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
+	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
+	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté! ',
+	'jump refléxivité3',
+],
+'ouibecker':[
+	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
+	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
+	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté! ',
+
+	'jump refléxivité3',
+],
+
+'reflexivité3':[
+	'a Les entretiens réels sont tous singuliers et uniques. (Blachet et al., 1985). Puisque cet entretien est simulé et qu’il est possible de relancer la discussion autant de fois que désiré, il n’est pas représentatif de ce qui va se passer pour vos propres entretiens. Nous espérons cependant que cette esquisse de mise en contexte a pu te permettre de te projeter dans de futures situations',
+	'a Nous n’avons pas créé les questions et les réponses au hasard. Les réponses fictives de Laura nous ont été inspirées par deux ouvrages et par des entretiens auprès de caissière menés dans un autre cours',
+	'a Les deux ouvrages sont “Caissière... et après : Une enquête parmi les travailleurs de la grande distribution” et “Être caissière (caissier)” de Bernard (2011).',
+	'a Tu trouveras dans la bibliographie les références exactes, mais nous pouvons signaler d’autre matériaux de vulgarisation non utilisé ici, comme le compte rendu d’un séminaire de direction d’entretien par Marion Ink (https://mastersociologie.hypotheses.org/3342)',
+	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. ou encore l’ouvrage d’introduction des Pinçon-Charlot : Voyage en grande bourgeoisie: Journal d’enquête. (2005).',
+    'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la misère du monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
+    'jump bibliographie',
+],
+
+
+'bibliographie':[
+	'a : Tu trouveras la bibliographie dans le readme du jeu.'
+],
+	
 });
