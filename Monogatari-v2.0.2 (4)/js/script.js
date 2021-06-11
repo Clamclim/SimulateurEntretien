@@ -88,24 +88,24 @@ monogatari.action ('message').messages ({
 	},
 
 	'excuse15':{
-		title:'oser expliquer',
+		title:'Oser expliquer',
 		body: 'Pour ce genre d’informations utiles et dont la divulgation est de toute façon prohibée, il peut être bon de préciser ses intentions',
 	},
 
 	'exigence15':{
-		title:'quel tact',
+		title:'Le tact',
 		body: 'C’est vrai, mais lorsque la personne se montre réticente, essayer d’arrondir les angles est utile. Il ne faut pas oublier que ce n’est pas un interrogatoire et que la personne prend de son temps pour nous aider. Elle ne nous doit rien.',
 	},
 
 	'indiscret15':{
-		title:'la pertinance de les informations',
+		title:'La pertinance des informations',
 		body: 'Sans justification et lors d’un premier entretien, cela s’apparente au ragot et non à l’entretien sociologique',
 	},
 
 
 
 	'brutend':{
-		title:'le tact',
+		title:'On sait jamais',
 		body: 'attention il est toujours bienvenu de demander à son interviewé s’il veut préciser quelque chose sur une question ou s’il a l’impression de ne pas avoir pu s’exprimer sur un sujet. ( voir par exemple Beaud et Weber (2003) ou Becker (2002))',
 	},
 
@@ -757,7 +757,7 @@ monogatari.script ({
 ],
 
 'conseil14':[
-	'show message relance14',
+	'show message conseil14',
 	'show character c talk',
 	'c bof, ça prend du temps, hein.',
 	'jump question15',
@@ -796,10 +796,10 @@ monogatari.script ({
 	'c Est-ce que c’est pas un peu trop personnel comme question?',
 	{
 		'Choice':{
-		'Dialog':'elle est inconfortable...',
+		'Dialog':'a elle est inconfortable...',
 			'excuse15':{
 				'Text':'Désolé(e), ce n’était pas l’intention.',
-				'Do':'jump excuse16',
+				'Do':'jump excuse15',
 			},
 			'justification15':{
 				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentielle, mais vous n’êtes pas obligée d’y répondre',
@@ -971,7 +971,8 @@ monogatari.script ({
 
 
 'bibliographie':[
-	'a : Tu trouveras la bibliographie dans le readme du jeu.'
+	'a  Tu trouveras la bibliographie dans le readme du jeu.',
+	'a Thank you for playing, comme ils disent.',
 ],
 	
 });
