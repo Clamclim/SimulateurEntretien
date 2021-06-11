@@ -971,7 +971,7 @@ monogatari.script ({
 
 
 'bibliographie':[
-	'a  Tu trouveras la bibliographie dans le readme du jeu.',
+	'a Tu trouveras la bibliographie dans le readme du jeu.',
 	'a Thank you for playing, comme ils disent.',
 ],
 	
