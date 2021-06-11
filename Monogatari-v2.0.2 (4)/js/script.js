@@ -182,6 +182,8 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
+	'street':'street.mp3',
+	'mainTheme':'intérieur.mp3',
 
 });
 
@@ -242,6 +244,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
+		'play music street with loop',
 		'show scene street with fadeIn',
 		'show notification Welcome',
 		{
@@ -322,11 +325,14 @@ monogatari.script ({
 	],
 	
 	'mauvaisEndroit':[
+		'stop music street',
 		'show message mauvaisEndroit',
 		'end',
 	],
 
 	'moyenEndroit':[
+		'stop muscic street',
+		'play music mainTheme with loop',
 		'show message moyenEndroit',
 		'show scene university with fadeIn',
 		'show character c normal',
@@ -335,6 +341,8 @@ monogatari.script ({
 	],
 
 	'bonEndroit':[
+		'stop music street',
+		'play music mainTheme with loop',
 		'show scene coffee with fadeIn',
 		'show character c normal',
 		'a Tu repère Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
