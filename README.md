@@ -1,6 +1,12 @@
 # Visual-Novel
 Simulateur d'entretien - caissière
 
+Ce jeu est un entretien virtuelle. La règle est simple : choisir l'option la plus appropriée. 
+Certaines erreurs ne vous renverrons qu'à un message explicatif si c'est une maladresse mineure. 
+Cependant, si l'option est trop mauvaise, l'aventure se terminera plus tôt que prévu.
+
+Pour recenser des risques et erreurs connues, les références sont étalées dans les vignettes au fur et à mesure pour approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisé lors d'un autre cours.
+
 # Bibliographie:
 
 Beaud, S. & Weber, F. (2013). Guide de l’enquête de terrain : produire et analyser des données ethnographiques. Paris: La Découverte
