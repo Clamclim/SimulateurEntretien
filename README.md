@@ -1,6 +1,6 @@
 
 
-Projet de jeu vidéo à visée de médiation dans le cadre du cours pour le cour [Développement de Jeux Vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=78133&v_ueid=174&v_langue=37) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne.
+Ce jeu vidéo avec objectif de médiation a été créer dans le cadre du cours pour le cour [Développement de Jeux Vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=78133&v_ueid=174&v_langue=37) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne.
 
 # Visual-Novel 
 
