@@ -1,11 +1,15 @@
-# Visual-Novel
+Projet de jeu vidéo à visée de médiation dans le cadre du cours pour le cour [Développement de Jeux Vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=78133&v_ueid=174&v_langue=37) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne.
+
+# Visual-Novel et médiation
 Simulateur d'entretien - caissière
 
-Ce jeu est un entretien virtuelle. La règle est simple : choisir l'option la plus appropriée. 
+Ce jeu est un entretien virtuelle. La règle est simple : choisir l'option la plus appropriée parmi les différentes proposées. 
 Certaines erreurs ne vous renverrons qu'à un message explicatif si c'est une maladresse mineure. 
-Cependant, si l'option est trop mauvaise, l'aventure se terminera plus tôt que prévu.
+Cependant, si l'option est trop inadaptée, l'aventure se terminera plus tôt que prévu.
 
-Pour recenser des risques et erreurs connues, les références sont étalées dans les vignettes au fur et à mesure pour approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisé lors d'un autre cours.
+Les cibles de ce jeu de médiation sont des étudiant.e.s de première années de sciences sociales ou pour des novices interessé.e.s par les arcanes de l'entretien. 
+
+Pour recenser des risques et erreurs connues, les références sont explicitées dans les vignettes au fur et à mesure afin approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisés par Clémence lors d'un autre cours.
 
 # Bibliographie:
 
