@@ -182,8 +182,10 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-	'street':'street.mp3',
-	'mainTheme':'intérieur.mp3',
+	'début':'Street.mp3',
+	'biblio':'Library.mp3',
+	'café':'Coffee.mp3',
+	'fin':'House.mp3',
 
 });
 
@@ -194,6 +196,7 @@ monogatari.assets ('voices', {
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
+	'GameOver':'sounds.mp3',
 
 });
 
@@ -244,7 +247,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'play music street with loop',
+		'play music début with loop',
 		'show scene street with fadeIn',
 		'show notification Welcome',
 		{
@@ -326,13 +329,14 @@ monogatari.script ({
 	
 	'mauvaisEndroit':[
 		'stop music street',
+		'play sound GameOver',
 		'show message mauvaisEndroit',
 		'end',
 	],
 
 	'moyenEndroit':[
 		'stop muscic street',
-		'play music mainTheme with loop',
+		'play music biblio with loop',
 		'show message moyenEndroit',
 		'show scene university with fadeIn',
 		'show character c normal',
@@ -342,7 +346,7 @@ monogatari.script ({
 
 	'bonEndroit':[
 		'stop music street',
-		'play music mainTheme with loop',
+		'play music café with loop',
 		'show scene coffee with fadeIn',
 		'show character c normal',
 		'a Tu repère Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
@@ -445,6 +449,7 @@ monogatari.script ({
 	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien',
 	'a Laura se lève et part.',
 	'hide character c',
+	'play sound GameOver',
 	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois',
 	'end',
 ],
@@ -654,6 +659,7 @@ monogatari.script ({
 	'show character c angry',
 	'Pardon mais je vous permets pas de me dire ce genre de choses !',
 	'a Laura se lève et quitte la salle.',
+	'play sound GameOver',
 	'show message avis',
 	'end',
 ],
@@ -809,6 +815,7 @@ monogatari.script ({
 ],
 
 'indiscret15':[
+	'play sound GameOver',
 	'show message indiscret15',
 	'end',
 ],
@@ -912,6 +919,8 @@ monogatari.script ({
 ],
 
 'reflexivité':[
+	'stop music',
+	'play music fin',
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
 	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
@@ -993,6 +1002,7 @@ monogatari.script ({
 'bibliographie':[
 	'a Tu trouveras la bibliographie dans le readme du jeu.',
 	'a Thank you for playing, comme ils disent.',
+	'end',
 ],
 	
 });
