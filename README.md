@@ -1,3 +1,5 @@
+
+
 Projet de jeu vidéo à visée de médiation dans le cadre du cours pour le cour [Développement de Jeux Vidéo 2D](https://applicationspub.unil.ch/interpub/noauth/php/Ud/ficheCours.php?v_enstyid=78133&v_ueid=174&v_langue=37) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne.
 
 # Visual-Novel 
@@ -13,8 +15,9 @@ Cependant, si l'option est trop inadaptée, l'aventure se terminera plus tôt qu
 Les cibles de ce jeu de médiation sont des étudiant.e.s de première années de sciences sociales ou pour des novices interessé.e.s par les arcanes de l'entretien. 
 
 Pour recenser des risques et erreurs connues, les références sont explicitées dans les vignettes au fur et à mesure afin approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisés par Clémence lors d'un autre cours.
+# Credits
 
-# Bibliographie:
+## Bibliographie:
 
 Beaud, S. & Weber, F. (2013). *Guide de l’enquête de terrain : produire et analyser des données ethnographiques*. Paris: La Découverte
 
@@ -37,8 +40,21 @@ Sauvayre, R. (2013). Chapitre 2. La réalisation de l’entretien : le « terrai
 Waelli, M. (2009). *Caissière... et après : Une enquête parmi les travailleurs de la grande distribution.* Paris cedex 14, France: Presses Universitaires de France
 
 
-# Credits
-
-## Auteur et autrice
+## Autrice et auteur
 
 Antonin Wyss et Clémence Danesi
+
+
+
+## Logiciel
+
+[Monogatari](https://monogatari.io/)
+
+## Contribution
+
+### Musique et sons
+
+Fluminislctus 
+
+### Images 
+puppetbomb
