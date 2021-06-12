@@ -89,11 +89,13 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
+	opacity: 1;
 
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
+	opacity: 1;
 
 }
 
@@ -102,9 +104,6 @@ button:hover {
 
 }
 
-[data-component="message"] {
-	text-align: justify;
-}
 
 /* Character Name Style */
 [data-ui="who"] {
