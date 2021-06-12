@@ -3,17 +3,17 @@
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
 	'mauvaisEndroit': {
-		title: 'Mauvais choix',
+		title: 'Un lieu pas très approprié',
 		body: 'Ce choix pourrait gené la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
 	},
 
 	'moyenEndroit': {
-		title: 'Intimidant',
+		title: 'Un lieu intimidant',
 		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
 	},
 
 	'noPrécision':{
-		title:'Mauvaix choix',
+		title:'Plutôt deux fois qu’une',
 		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter toutes mauvaises surprises.',
 	},
 
@@ -23,7 +23,7 @@ monogatari.action ('message').messages ({
 	},
 
 	'personnelle1':{
-		title:'Mauvaix choix',
+		title:'Trop personnelle',
 		body:'Poser cette question à ce moment-là, n’est pas approprié. C’est une question personnelle très intrusive et dans ce contexte pourrait paraître jugeant sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
 	},
 
@@ -44,7 +44,7 @@ monogatari.action ('message').messages ({
 
 	'scientifique':{
 		title:'Les mots du chercheur',
-		body: 'Les questionnements des enquêteurs ne sont pas les soucis quotidiens des enquêté.e.s, la reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
+		body: 'Les questionnements des enquêteur.trice.s ne sont pas les soucis quotidiens des enquêté.e.s, la reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
 	},
 
 	'horsSujet':{
@@ -69,12 +69,12 @@ monogatari.action ('message').messages ({
 
 	'GenreF':{
 		title:'Confidence?',
-		body: 'Aurais-tu eu le même message si tu avais été une autre personne?',
+		body: 'Aurais-tu eu le même message si tu avais été perçue comme un homme ?',
 	},
 
 	'GenreM':{
 		title:'Hésitation?',
-		body: 'Aurais-tu eu le même message si tu avais été une autre personne?',
+		body: 'Aurais-tu eu le même message si tu avais été preçu comme une femme ?',
 	},
 
 	'sourire13':{
@@ -83,7 +83,7 @@ monogatari.action ('message').messages ({
 	},
 
 	'conseil14':{
-		title:'Mauvaix choix',
+		title:'Pas de conseils',
 		body: ' Ce n’est pas le rôle du chercheur de donner des conseils sur ce qu’il pense être bien. Une écoute non jugeante des actions de l’interviewé-e est à privilégier.',
 	},
 
@@ -101,7 +101,6 @@ monogatari.action ('message').messages ({
 		title:'La pertinance des informations',
 		body: 'Sans justification et lors d’un premier entretien, cela s’apparente au ragot et non à l’entretien sociologique',
 	},
-
 
 
 	'brutend':{
@@ -125,13 +124,8 @@ monogatari.action ('message').messages ({
 	},
 
 	'nonbecker':{
-		title:'missclick',
-		body: 'ça arrive même au meilleur, pas de soucis, voici le texte tant attendu',
-	},
-
-	'message_id':{
-		title:'Mauvaix choix',
-		body: '',
+		title:'Missclick',
+		body: 'Cela arrive même au meilleur, pas de soucis, voici le texte tant attendu',
 	},
 });
 
