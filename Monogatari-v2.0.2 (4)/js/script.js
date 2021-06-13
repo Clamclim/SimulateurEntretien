@@ -1,5 +1,12 @@
 /* global monogatari */
 
+monogatari.component ('main-screen').template (() => {
+    return `
+        <h1>Simulateur d'entretien</h1>
+        <main-menu></main-menu>
+    `;
+});
+
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
 	'mauvaisEndroit': {
@@ -105,12 +112,12 @@ monogatari.action ('message').messages ({
 
 	'brutend':{
 		title:'On sait jamais',
-		body: 'attention il est toujours bienvenu de demander à son interviewé s’il veut préciser quelque chose sur une question ou s’il a l’impression de ne pas avoir pu s’exprimer sur un sujet. ( voir par exemple Beaud et Weber (2003) ou Becker (2002))',
+		body: 'Attention il est toujours bienvenu de demander à son interviewé s’il veut préciser quelque chose sur une question ou s’il a l’impression de ne pas avoir pu s’exprimer sur un sujet. ( voir par exemple Beaud et Weber (2003) ou Becker (2002))',
 	},
 
 	'refle1':{
 		title:'Le temps long de l’enquête',
-		body: 'en effet, il est important de mener plusieurs entretiens pour approfondir le rapport entre vous et affiner les informations pertinentes. La confiance prend du temps, tout comme l’enquête de terrain',
+		body: 'En effet, il est important de mener plusieurs entretiens pour approfondir le rapport entre vous et affiner les informations pertinentes. La confiance prend du temps, tout comme l’enquête de terrain',
 	},
 
 	'refle2':{
@@ -153,20 +160,6 @@ monogatari.configuration ('credits', {
 "Développement":{
 	"Équipe":[
 		"Clémence Danesi", "Antonin Wyss",
-	],
-},
-"Références":{
-	"Bibliographie":[
-	"Beaud, S. & Weber, F. (2013). Guide de l’enquête de terrain : produire et analyser des données ethnographiques. Paris: La Découverte.",
-	"Becker, H. (2002). Les ficelles du métier. Comment conduire sa recherche en sciences sociales. Paris: La Découverte.",
-	"Bernard. S. (2011). Être caissière (caissier). Lyon: Éditions Lieux Dits, collection Être.",
-	"Blanchet, A. & al. (1985). L’entretien dans les sciences sociales. L’écoute, la parole et le sens.  Paris: Bordas.",
-	"Quivy, R. & Van Campenhoudt, L. (2017). Manuel de recherche en sciences sociales. Paris: Dunod.",
-	"Pinçon, M. & Pinçon-Charlot, M. (2005). Voyage en grande bourgeoisie: Journal d’enquête. Paris cedex 14, France: Presses Universitaires de France.",
-	"Laurens, S. (2007). 'Pourquoi et comment poser le questions qui fâchent ?' Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. Genèses, n° 69, p. 112- 127.",
-	"Mayer, N. (1995). L'entretien selon Pierre Bourdieu. Analyse critique de La misère du monde. Revue française de sociologie, 36-2. pp. 355-370.",
-	"Sauvayre, R. (2013). Chapitre 2. La réalisation de l’entretien : le « terrain ». Dans : , R. Sauvayre, Les méthodes de l'entretien en sciences sociales (pp. 49-101). Paris: Dunod.",
-	"Waelli, M. (2009). Caissière... et après : Une enquête parmi les travailleurs de la grande distribution. Paris cedex 14, France: Presses Universitaires de France.",
 	],
 },
 

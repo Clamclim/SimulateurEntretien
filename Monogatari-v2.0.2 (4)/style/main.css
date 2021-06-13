@@ -47,6 +47,12 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
+	background-image: url("menu.jpg");
+
+}
+
+[data-screen="h1"] {
+	text-align: center;
 
 }
 
@@ -89,13 +95,15 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-	opacity: 1;
+	opacity: 0.8;
+	background-color: black;
 
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
 	opacity: 1;
+	background-color: black;
 
 }
 
