@@ -85,7 +85,7 @@ monogatari.action ('message').messages ({
 	},
 
 	'sourire13':{
-		title:'Mauvaix choix',
+		title:'Mauvais choix',
 		body: 'Le "voilà" est un bon indicateur de fin de discours. Pour plus de détail, tu peux te référer à Sauvayre (2013).',
 	},
 
