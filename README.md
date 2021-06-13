@@ -16,7 +16,7 @@ Cependant, si l'option est trop inadaptée, l'aventure se terminera plus tôt qu
 
 Les cibles de ce jeu de médiation sont des étudiant.e.s de première années de sciences sociales ou pour des novices interessé.e.s par les arcanes de l'entretien. 
 
-Pour recenser des risques et erreurs connues, les références sont explicitées dans les vignettes au fur et à mesure afin approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisés par Clémence lors d'un autre cours.
+Pour recenser des risques et erreurs connues, les références sont explicitées dans les vignettes au fur et à mesure afin d'approfondir les points qui peuvent sembler obscures. Pour que notre personnage fictif soit plausible, nous avons utilisé deux ouvrages sur le métier de caissière ainsi que des entretiens réalisés par Clémence lors d'un autre cours.
 # Credits
 
 ## Bibliographie:
