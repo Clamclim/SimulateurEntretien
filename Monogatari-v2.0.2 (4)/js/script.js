@@ -81,7 +81,7 @@ monogatari.action ('message').messages ({
 
 	'GenreM':{
 		title:'Hésitation?',
-		body: 'Aurais-tu eu le même message si tu avais été preçu comme une femme ?',
+		body: 'Aurais-tu eu le même message si tu avais été perçu comme une femme ?',
 	},
 
 	'sourire13':{
@@ -122,7 +122,7 @@ monogatari.action ('message').messages ({
 
 	'refle2':{
 		title:'Défaitisme',
-		body: 'Effectivement, tu pourrais surement faire mieux, mais il ne faut pas oublier que c’était la première caissière que tu rencontres pour ton projet, qu’elle ne représente pas la Caissière et que le temps pour un entretien singulier n’est pas illimité.',
+		body: 'Effectivement, tu pourrais surement faire mieux, mais il ne faut pas oublier que c’était la première caissière que tu rencontres pour ton projet, qu’elle ne représente pas LA Caissière et que le temps pour un entretien singulier n’est pas illimité.',
 	},
 
 	'refle3':{
@@ -260,10 +260,10 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien.',
+	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien. Pour une meilleure expérience, tu peux utiliser le mode full screen situé en bas à droite.',
 		{
 			'Choice': {
-				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien de sciences sociales avant ?',
+				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien de sciences sociales précédemment ?',
 				'Yes': {
 					'Text': 'Oui',
 					'Do': 'jump Yes'
