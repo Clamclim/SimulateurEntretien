@@ -164,8 +164,9 @@ monogatari.configuration ('credits', {
 },
 
 "Contributeur-trice-s":{
-	"Images":" puppetbomb ",
-	"Musique et sons":" Fluminislctus ",
+	"Images caractère":"<a href=https://puppetbomb.itch.io/>puppetbomb",
+	"Images décors":"<a href=https://cloudnovel.net/fluffness>fluffness",
+	"Musiques et sons":"<a href=https://fulminisictus.itch.io/>Fluminislctus",
 }
 
 });
@@ -324,14 +325,14 @@ monogatari.script ({
 	],
 	
 	'mauvaisEndroit':[
-		'stop music street',
-		'play sound GameOver',
+		'stop music début',
 		'show message mauvaisEndroit',
+		'play sound GameOver',
 		'end',
 	],
 
 	'moyenEndroit':[
-		'stop muscic street',
+		'stop muscic début',
 		'play music biblio with loop',
 		'show message moyenEndroit',
 		'show scene university with fadeIn',
@@ -341,7 +342,7 @@ monogatari.script ({
 	],
 
 	'bonEndroit':[
-		'stop music street',
+		'stop music début',
 		'play music café with loop',
 		'show scene coffee with fadeIn',
 		'show character c normal',
@@ -440,13 +441,14 @@ monogatari.script ({
 ],
 
 'personnelle1':[
+	'stop music',
 	'show message personnelle1',
 	'show character c angry',
 	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien',
 	'a Laura se lève et part.',
 	'hide character c',
-	'play sound GameOver',
 	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois',
+	'play sound GameOver',
 	'end',
 ],
 
@@ -655,8 +657,9 @@ monogatari.script ({
 	'show character c angry',
 	'Pardon mais je vous permets pas de me dire ce genre de choses !',
 	'a Laura se lève et quitte la salle.',
-	'play sound GameOver',
+	'stop music',
 	'show message avis',
+	'play sound GameOver',
 	'end',
 ],
 
@@ -811,8 +814,9 @@ monogatari.script ({
 ],
 
 'indiscret15':[
-	'play sound GameOver',
+	'stop music',
 	'show message indiscret15',
+	'play sound GameOver',
 	'end',
 ],
 'salaire15':[
@@ -916,7 +920,7 @@ monogatari.script ({
 
 'reflexivité':[
 	'stop music',
-	'play music fin',
+	'play music fin with loop',
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
 	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
