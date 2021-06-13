@@ -6,7 +6,7 @@ Ce jeu vidéo avec objectif de médiation a été créer dans le cadre du cours 
 
 ## Simulateur d'entretien - caissière
 
-Ce jeu est un entretien virtuelle. La règle est simple : choisir l'option la plus appropriée parmi les différentes proposées. 
+Ce jeu est un entretien virtuel. La règle est simple : choisir l'option la plus appropriée parmi les différentes proposées. 
 Certaines erreurs ne vous renverrons qu'à un message explicatif si c'est une maladresse mineure. 
 Cependant, si l'option est trop inadaptée, l'aventure se terminera plus tôt que prévu.
 
@@ -42,7 +42,7 @@ Waelli, M. (2009). *Caissière... et après : Une enquête parmi les travailleur
 
 ## Autrice et auteur
 
-Antonin Wyss et Clémence Danesi
+Clémence Danesi et Antonin Wyss
 
 
 
