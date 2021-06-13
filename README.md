@@ -52,9 +52,10 @@ Clémence Danesi et Antonin Wyss
 
 ## Contribution
 
-### Musique et sons
+### Musiques et sons
 
-Fluminislctus 
+[Fluminislctus ](https://fulminisictus.itch.io/)
 
 ### Images 
-puppetbomb
+[puppetbomb](https://puppetbomb.itch.io/)
+[fluffness](https://cloudnovel.net/fluffness)
