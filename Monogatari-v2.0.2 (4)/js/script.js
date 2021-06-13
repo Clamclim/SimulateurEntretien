@@ -374,7 +374,7 @@ monogatari.script ({
 	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
 	'show character c shoked',
 	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
-	'b Ah oui désolé de ne pas vous l’avoir redit.',
+	'b Ah oui désolé de ne pas vous l’avoir rapeller.',
 	'jump question1',
 ],
 
