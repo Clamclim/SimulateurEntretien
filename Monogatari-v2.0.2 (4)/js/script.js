@@ -16,7 +16,7 @@ monogatari.action ('message').messages ({
 
 	'moyenEndroit': {
 		title: 'Un lieu intimidant',
-		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais fais attention pour les prochaines fois.',
+		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais il faudra faire attention pour les prochaines fois.',
 	},
 
 	'noPrécision':{
@@ -26,17 +26,17 @@ monogatari.action ('message').messages ({
 
 	'pourquoi':{
 		title:'Comment et pourquoi',
-		body:'En demandant “pourquoi”, vous incitez la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, vous obtiendrez donc sûrement plus d’informations (Ink, 2016).',
+		body:'En demandant “pourquoi”, cela incite la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, tu obtiendras donc sûrement plus d’informations (Ink, 2016).',
 	},
 
 	'personnelle1':{
 		title:'Trop personnelle',
-		body:'Poser cette question à ce moment-là, n’est pas approprié. C’est une question personnelle très intrusive et dans ce contexte pourrait paraître jugeant sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
+		body:'Â ce moment de l’entretien poser cette question n’est pas approprié. C’est une question personnelle très intrusive et, dans ce contexte, elle pourrait paraître jugeante sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
 	},
 
 	'multipleQuestion':{
 		title:'Trop confus',
-		body: 'Il y a trop de questions, ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites peuvent rendre l’entretien moins brouillon.',
+		body: 'Il y a trop de questions. Ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites en amont peuvent rendre l’entretien moins brouillon.',
 	},
 
 	'relance':{
@@ -46,17 +46,17 @@ monogatari.action ('message').messages ({
 
 	'rien':{
 		title:'Un sourire pour encourager',
-		body: 'Des encouragements à continuer peuvent aider la personne à approfondir.Sauvayre (2013) élabore sur les réactions face aux silences.',
+		body: 'Des encouragements à continuer peuvent aider la personne à approfondir. Sauvayre (2013) élabore sur les réactions face aux silences.',
 	},
 
 	'scientifique':{
-		title:'Les mots du chercheur',
-		body: 'Les questionnements des enquêteur.trice.s ne sont pas les soucis quotidiens des enquêté.e.s, la reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
+		title:'Les mots du ou de la chercheur.euse',
+		body: 'Les questionnements des enquêteur.trice.s ne sont pas les soucis quotidiens des enquêté.e.s. La reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
 	},
 
 	'horsSujet':{
 		title:'Hors sujet',
-		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
+		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. Tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquettes?',
 	},
 
 	'nonSavoir':{
@@ -66,12 +66,12 @@ monogatari.action ('message').messages ({
 
 	'directif':{
 		title:'Imposition de la thématique',
-		body: 'Parfois les gens n’ont pas le même bagage que vous pour décrire leur situation. Ici vous suggérer fortement une manière de répondre de votre interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici tu suggéres fortement une manière de répondre de ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
 	},
 
 	'avis':{
 		title:'Pas de débat',
-		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec vos idéaux, l’entretien n’est pas un lieu de débat, vous êtes ici pour écouter ce que la personne a à vous dire et non juger ses choix de vie. Vous serez au courant pour la prochaine fois',
+		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec tes idéaux, l’entretien n’est pas un lieu de débat, tu es ici pour écouter ce que la personne a à te dire et non juger ses choix de vie. Tu seras au courant pour la prochaine fois.',
 	},
 
 	'GenreF':{
@@ -91,12 +91,12 @@ monogatari.action ('message').messages ({
 
 	'conseil14':{
 		title:'Pas de conseils',
-		body: ' Ce n’est pas le rôle du chercheur de donner des conseils sur ce qu’il pense être bien. Une écoute non jugeante des actions de l’interviewé-e est à privilégier.',
+		body: ' Ce n’est pas le rôle des chercheur.euse.s de donner des conseils sur ce qu’iels pensent être bien. Une écoute non jugeante des actions de l’interviewé.e est à privilégier.',
 	},
 
 	'excuse15':{
 		title:'Oser expliquer',
-		body: 'Pour ce genre d’informations utiles et dont la divulgation est de toute façon prohibée, il peut être bon de préciser ses intentions',
+		body: 'Pour ce genre d’informations utiles et dont la divulgation est de toute façon prohibée, il peut être bon de préciser ses intentions.',
 	},
 
 	'exigence15':{
@@ -105,34 +105,34 @@ monogatari.action ('message').messages ({
 	},
 
 	'indiscret15':{
-		title:'La pertinance des informations',
-		body: 'Sans justification et lors d’un premier entretien, cela s’apparente au ragot et non à l’entretien sociologique',
+		title:'La pertinence des informations',
+		body: 'Sans justification et lors d’un premier entretien, cela s’apparente au ragot et non à l’entretien sociologique.',
 	},
 
 
 	'brutend':{
-		title:'On sait jamais',
-		body: 'Attention il est toujours bienvenu de demander à son interviewé s’il veut préciser quelque chose sur une question ou s’il a l’impression de ne pas avoir pu s’exprimer sur un sujet. ( voir par exemple Beaud et Weber (2003) ou Becker (2002))',
+		title:'On ne sait jamais',
+		body: 'Attention il est toujours bienvenu de demander à son interviewé.e s’iel veut préciser quelque chose sur une question ou s’iel a l’impression de ne pas avoir pu s’exprimer sur un sujet. Voir par exemple Beaud et Weber (2003) ou Becker (2002).',
 	},
 
 	'refle1':{
 		title:'Le temps long de l’enquête',
-		body: 'En effet, il est important de mener plusieurs entretiens pour approfondir le rapport entre vous et affiner les informations pertinentes. La confiance prend du temps, tout comme l’enquête de terrain',
+		body: 'En effet, il est important de mener plusieurs entretiens pour approfondir le rapport entre vous et affiner les informations pertinentes. La confiance prend du temps, tout comme l’enquête de terrain.',
 	},
 
 	'refle2':{
 		title:'Défaitisme',
-		body: 'Effectivement, tu pourrais surement faire mieux, mais il ne faut pas oublier que c’était la première caissière que tu rencontres pour ton projet, qu’elle ne représente pas la Caissière et que le temps pour un entretien singulier n’est pas illimité',
+		body: 'Effectivement, tu pourrais surement faire mieux, mais il ne faut pas oublier que c’était la première caissière que tu rencontres pour ton projet, qu’elle ne représente pas la Caissière et que le temps pour un entretien singulier n’est pas illimité.',
 	},
 
 	'refle3':{
-		title:'La finitude du monde',
-		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie social est tout de même possible',
+		title:'Un savoir fragmenté',
+		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie social est tout de même possible.',
 	},
 
 	'nonbecker':{
 		title:'Missclick',
-		body: 'Cela arrive même au meilleur, pas de soucis, voici le texte tant attendu',
+		body: 'Cela arrive même au meilleur, pas de soucis, voici le texte tant attendu.',
 	},
 });
 
@@ -260,7 +260,7 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien!',
+	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien.',
 		{
 			'Choice': {
 				'Dialog': 'a Est-ce que tu as déjà dû dirigé un entretien avant ?',
@@ -278,19 +278,19 @@ monogatari.script ({
 
 	'Yes': [
 		'a Super, ce jeu va te permettre de voir si tu maîtrise bien cet exercice !',
-		'a Pour la suite du jeu tu vas te plonger dans la peau d’un chercheur en sciences sociales !',
+		'a Pour la suite du jeu, tu vas te plonger dans la peau d’un.e chercheur.euse en sciences sociales !',
 		'jump Intro'
 	],
 
 	'No': [
 
 		'a Jamais ? Ce jeu va donc être une première approche pour essayer de comprendre comment bien mener un entretien.',
-		'a Pour la suite du jeu tu vas te plonger dans la peau d’un chercheur en sciences sociales',
+		'a Pour la suite du jeu, tu vas te plonger dans la peau d’un.e chercheur.euse en sciences sociales !',
 		'jump Intro'
 	],
 	
 'Intro':[
-	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé-e-s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec Laura, une caissière qui a répondu à ton appel à témoignage.',
+	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé.e.s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec Laura, une caissière qui a répondu à ton appel à témoignage.',
 		{
 			'Choice':{
 				'Dialog':'a Où as-tu décidé de donner rendez-vous à Laura ?',
@@ -362,7 +362,7 @@ monogatari.script ({
 ],
 
 'précision':[
-	'b Avant de commencer, je vous rappelle que cette entretien sera enregistré et complètement anonymisé.',
+	'b Avant de commencer, je vous rappelle que cet entretien sera enregistré et complètement anonymisé.',
 	'b Est-ce que cela vous convient toujours ?',
 	'show character c talk',
 	'c Oui, pas de problème.',
@@ -380,9 +380,10 @@ monogatari.script ({
 
 'question1':[
 	'show character c normal',
-	'b Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
+	'b Tout d’abbord, est-ce que vous pouvez rapidement vous présenter ?',
 	'show character c talk',
-	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'c Oui bien sûr, par où commencer ?',
+	'c Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
 	'show character c normal',
 	{ 
 		'Choice':{
@@ -434,7 +435,7 @@ monogatari.script ({
 	'play sound GameOver',
 	'show message personnelle1',
 	'show character c angry',
-	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien',
+	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien.',
 	'a Laura se lève et part.',
 	'hide character c',
 	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois...',
@@ -449,11 +450,11 @@ monogatari.script ({
 		'Choice':{
 			'Dialog':'a Choisissez la prochaine question.',
 			'multipleQuestion':{
-				'Text':'Qu’est-ce que vous pensez des conditions de travail de la Cuup, est-ce que vous avez déjà eu des problèmes avec les clients ou vos collègues? Vous diriez que c’est quoi votre tâche la plus pénible de la journée?',
+				'Text':'Qu’est-ce que vous pensez des conditions de travail de la Cuup ? Est-ce que vous avez déjà eu des problèmes avec les clients ou vos collègues ? Vous diriez que c’est quoi votre tâche la plus pénible de la journée ?',
 				'Do':'jump multipleQuestion',
 			},
 			'question4':{
-				'Text':'Est-ce que vous pourriez essayer de nous décrire une journée type?',
+				'Text':'Est-ce que vous pourriez essayer de nous décrire une journée type ?',
 				'Do':'jump question4',
 			}
 		}
@@ -463,8 +464,8 @@ monogatari.script ({
 'multipleQuestion':[
 	'show message multipleQuestion',
 	'show character c sad',
-	'c Pardon, quel était le début de votre question déjà?',
-	'b Est-ce que vous pourriez essayer de nous décrire une journée type?',
+	'c Pardon, quel était le début de votre question déjà ?',
+	'b Est-ce que vous pourriez essayer de nous décrire une journée type ?',
 	'jump question4',
 ],
 'question4':[
@@ -479,7 +480,7 @@ monogatari.script ({
 				'Do':'jump question5',
 			},
 			'relance':{
-				'Text':'Est-ce que vous auriez un exemple?',
+				'Text':'Est-ce que vous auriez un exemple ?',
 				'Do':'jump relance',
 			},
 			'rien':{
@@ -510,11 +511,11 @@ monogatari.script ({
 		'Choice':{
 			'Dialog':'a Sélectionne la question.',
 			'scientifique':{
-				'Text':'Comment vivez-vous ce régime néolibéral de management néoclassique?',
+				'Text':'Comment vivez-vous ce régime néolibéral de management néoclassique ?',
 				'Do':'jump scientifique',
 			},
 			'vulgarisée':{
-				'Text':'Comment vivez-vous au quotidien cette course perpétuelle?',
+				'Text':'Comment vivez-vous au quotidien cette course perpétuelle ?',
 				'Do':'jump question6',
 			},
 		}
@@ -524,20 +525,20 @@ monogatari.script ({
 'scientifique':[
 	'show message scientifique',
 	'show character c sad',
-	'c Je ne suis pas sûr d’avoir bien compris la question, est-ce que vous pouvez répéter?',
+	'c Je ne suis pas sûr d’avoir bien compris la question, est-ce que vous pouvez répéter ?',
 	'b Comment vivez-vous au quotidien cette course perpétuelle ?',
 	'jump question6',
 ],
 
 'question6':[
 	'show character c talk',
-	'c C’est éreintant! On finit les journées sur les talons, avec les collègues on se dit souvent qu’être un peu plus ça ne les ferait pas passer dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
-	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai le courage de faire plus que la promener pour ces besoins.',
+	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues on se dit souvent qu’être un peu plus ça ne les ferait pas passer dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
+	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai pas le courage de faire plus que la promener pour ses besoins.',
 	{
 		'Choice':{
-			'Dialog':'a C’est le moment de relancer.',
+			'Dialog':'a C’est le moment de relancer',
 			'bonSujet':{
-				'Text':'Vous avez remarqué certaines pénibilités communes avec vos collègues?',
+				'Text':'Vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 				'Do':'jump question7',
 			},
 			'horsSujet':{
@@ -565,11 +566,11 @@ monogatari.script ({
 		'Choice':{
 			'Dialog':'a Tendinite de caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
 			'Savoir':{
-				'Text':'Pour être sûr, c’est bien une tendinite du poignet dont il s’agit?',
+				'Text':'Pour être sûr, c’est bien d’une tendinite du poignet dont il s’agit?',
 				'Do':'jump question8',
 			},
 			'nonSavoir':{
-				'Text':'Ah c’est fou, j’aurai jamais pensé que caissier avait ses propres problèmes de santé.',
+				'Text':'Ah c’est fou, j’aurai jamais pensé que les caissières avaient leurs propres problèmes de santé.',
 				'Do':'jump nonSavoir',
 			},
 		}
@@ -585,12 +586,12 @@ monogatari.script ({
 
 'question8':[
 	'show character c talk',
-	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. A force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
+	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. À force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
 	'c Ça s’appelle je crois dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
 	{
 		'Choice':{
-		'Dialog':'a C’est une bonne occasion pour rebondir sur une question sur son rapport à la hiérarchie.',
+		'Dialog':'a C’est une bonne occasion pour rebondir sur une question sur son rapport à la hiérarchie',
 			'directif':{
 				'Text':'Vous voulez dire que vous êtes exploitée ?',
 				'Do':'jump directif',
@@ -606,7 +607,7 @@ monogatari.script ({
 'directif':[
 	'show message directif',
 	'show character c shoked',
-	'c Non, non, je ne pense pas. J’entretiens de très bonnes relations avec la plupart d’entre eux. C’est normal ce qu’il nous demande.',
+	'c Non, non, je ne pense pas. J’entretiens de très bonnes relations avec la plupart d’entre eux. C’est normal ce qu’ils nous demandent.',
 	'jump question9',
 ],
 
@@ -627,12 +628,12 @@ monogatari.script ({
 		'Choice':{
 		'Dialog':'a Tu es toi-même dans un syndicat et tu penses que c’est essentiel...',
 			'avis':{
-				'Text':'Donner ton avis',
-				'Do':'jump avis',
+				'Text':'Demande de développer',
+				'Do':'jump question10',
 			},
 			'nonAvis':{
-				'Text':'Demander de développer',
-				'Do':'jump question10',
+				'Text':'Donner ton avis',
+				'Do':'jump avis',
 			},
 		}
 	}
@@ -682,7 +683,7 @@ monogatari.script ({
 ],
 'choixmultiple11B':[
 	'show character c talk',
-	'c C’est chouette. On se soutient beaucoup parmi, quand il ny a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués.',
+	'c C’est chouette. On se soutient beaucoup parmi, quand il ny a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués...',
 	'jump question12',
 ],
 
@@ -692,13 +693,13 @@ monogatari.script ({
 	
 	{
 		'Choice':{
-		'Dialog':'a *tu vois Laura te regarder et réfléchir deux secondes... te perçoit-elle comme ',
+		'Dialog':'a Tu vois Laura te regarder et réfléchir deux secondes... te perçoit-elle comme ',
 			'GenreF':{
-				'Text':'a une femme?',
+				'Text':'a une femme ?',
 				'Do':'jump GenreF',
 			},
 			'GenreM':{
-				'Text':'a un homme?',
+				'Text':'a un homme ?',
 				'Do':'jump GenreM',
 			},
 		}
@@ -713,17 +714,17 @@ monogatari.script ({
 ],
 'GenreM':[
 	'show character c talk',
-	'c Récemment, une mère et son enfant passent à ma caisse, et là la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame!” Je me suis sentie dévalorisée…',
+	'c Récemment, une mère et son enfant passent à ma caisse, et là la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame !” Je me suis sentie dévalorisée…',
 	'show message GenreM',
 	'jump question13',
 ],
 
 'question13':[
 	'show character c normal',
-	'b merci de partager ça ici en tout cas... ',
+	'b Merci de partager ça ici en tout cas... ',
 	'b Est-ce que vous auriez aussi une bonne anecdote?',
 	'show character c talk',
-	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois et il y a des vraies relations qui peuvent se créer... voilà',
+	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois. Il y a des vraies relations qui peuvent se créer...voilà',
 	{
 		'Choice':{
 		'Dialog':'a ',
@@ -742,7 +743,7 @@ monogatari.script ({
 'sourire13':[
 	'show message sourire13',
 	'show character c talk',
-	'c Heu, voilà, j’ai rien à rajouter',
+	'c Heu, voilà, j’ai rien à rajouter.',
 	'b Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
 	'jump question 14',
 
@@ -760,7 +761,7 @@ monogatari.script ({
 				'Do':'jump question15',
 			},
 			'conseil14':{
-				'Text':'Vous pourriez quand même leur dire quelque chose ?',
+				'Text':'Vous pourriez quand même leur dire quelque chose...',
 				'Do':'jump conseil14',
 			},
 			'relance14':{
@@ -774,7 +775,7 @@ monogatari.script ({
 'conseil14':[
 	'show message conseil14',
 	'show character c talk',
-	'c bof, ça prend du temps, hein.',
+	'c Bof, ça prend du temps, hein.',
 	'jump question15',
 ],
 'relance14':[
@@ -789,9 +790,9 @@ monogatari.script ({
 	
 	{
 		'Choice':{
-		'Dialog':'a que souhaites-tu aborder?',
+		'Dialog':'a Que souhaites-tu aborder?',
 			'indiscret15':{
-				'Text':'Est-ce qu’il y a des collègues particuliers que vous n’aimez pas?',
+				'Text':'Est-ce qu’il y a des collègues particuliers que vous n’aimez pas ?',
 				'Do':'jump indiscret15',
 			},
 			'salaire15':{
@@ -817,9 +818,9 @@ monogatari.script ({
 	'c Est-ce que c’est pas un peu trop personnel comme question?',
 	{
 		'Choice':{
-		'Dialog':'a elle est inconfortable...',
+		'Dialog':'a Elle est inconfortable...',
 			'excuse15':{
-				'Text':'Désolé(e), ce n’était pas l’intention.',
+				'Text':'Désolé(e), ce n’était pas l’intention',
 				'Do':'jump excuse15',
 			},
 			'justification15':{
@@ -827,7 +828,7 @@ monogatari.script ({
 				'Do':'jump justification15',
 			},
 			'exigence15':{
-				'Text':'C’est une information essentielle dans notre situation.',
+				'Text':'C’est une information essentielle dans notre situation',
 				'Do':'jump exigence15',
 			},
 		},
@@ -852,7 +853,7 @@ monogatari.script ({
 
 'question16':[
 	'show character c normal',
-	'a Quelle question veux-tu poser?',
+	'a Quelle question veux-tu poser ?',
 	
 	{
 		'Choice':{
@@ -875,7 +876,8 @@ monogatari.script ({
 ],
 'QCM16B':[
 	'show character c talk',
-	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer pour mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
+	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer...',
+	'c Mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
 	'jump question17',
 ],
 
@@ -885,11 +887,11 @@ monogatari.script ({
 	{
 		'Choice':{
 			'brutend':{
-				'Text':'Merci de votre participation, toute mes questions ont été posées!',
+				'Text':'Merci de votre participation, toute mes questions ont été posées !',
 				'Do':'jump brutend',
 			},
 			'fincool':{
-				'Text':'Vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question?',
+				'Text':'Vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question ?',
 				'Do':'jump fincool',
 			},
 		}
@@ -899,15 +901,20 @@ monogatari.script ({
 'brutend':[
 	'show message brutend',
 	'show character c talk',
-	'c Merci à vous, j’espère que mes réponses auront pu vous aider.',
+	'c Merci à vous, j’espère que mes réponses auront pu vous aider !',
 	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'a Laura se lève et part.',
+	'hide character c',
+	'a Tu vas aussi pouvoir rentrer chez toi.',
 	'jump reflexivité',
 ],
 'fincool':[
 	'show character c talk',
 	'c Non je ne vois pas. Pour moi, c’est tout bon.',
 	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement.',
-	'a Laura se lève et part. Tu vas aussi pouvoir rentrer chez toi.',
+	'a Laura se lève et part.',
+	'hide character c',
+	'a Tu vas aussi pouvoir rentrer chez toi.',
 	'jump reflexivité',
 ],
 
@@ -916,7 +923,7 @@ monogatari.script ({
 	'play music fin with loop',
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
-	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
+	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation ?',
 	{
 		'Choice':{
 			'refle1':{
@@ -951,7 +958,7 @@ monogatari.script ({
 
 
 'reflexivité2':[
-	'a Veux-tu savoir ce qu’en dit Becker (2002) sur le sujet dans "Les ficelles du métier?"',
+	'a Veux-tu savoir ce qu’en dit Becker (2002) sur le sujet dans "Les ficelles du métier" ?',
 	{
 		'Choice':{
 			'nonbecker':{
@@ -970,30 +977,29 @@ monogatari.script ({
 	'show message nonbecker',
 	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
 	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
-	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté! ',
+	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté ! ',
 	'jump refléxivité3',
 ],
 'ouibecker':[
 	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
 	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
-	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté! ',
-
+	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté ! ',
 	'jump refléxivité3',
 ],
 
 'reflexivité3':[
 	'a Les entretiens réels sont tous singuliers et uniques. (Blachet et al., 1985). Puisque cet entretien est simulé et qu’il est possible de relancer la discussion autant de fois que désiré, il n’est pas représentatif de ce qui va se passer pour vos propres entretiens. Nous espérons cependant que cette esquisse de mise en contexte a pu te permettre de te projeter dans de futures situations',
-	'a Nous n’avons pas créé les questions et les réponses au hasard. Les réponses fictives de Laura nous ont été inspirées par deux ouvrages et par des entretiens auprès de caissière menés dans un autre cours',
+	'a Nous n’avons pas créé les questions et les réponses au hasard. Les réponses fictives de Laura nous ont été inspirées par deux ouvrages et par des entretiens auprès de caissière menés dans un autre cours.',
 	'a Les deux ouvrages sont “Caissière... et après : Une enquête parmi les travailleurs de la grande distribution” et “Être caissière (caissier)” de Bernard (2011).',
 	'a Tu trouveras dans la bibliographie les références exactes, mais nous pouvons signaler d’autre matériaux de vulgarisation non utilisé ici, comme le compte rendu d’un séminaire de direction d’entretien par Marion Ink (https://mastersociologie.hypotheses.org/3342)',
-	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. ou encore l’ouvrage d’introduction des Pinçon-Charlot : Voyage en grande bourgeoisie: Journal d’enquête. (2005).',
+	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. Ou encore l’ouvrage d’introduction des Pinçon-Charlot : Voyage en grande bourgeoisie: Journal d’enquête. (2005).',
     'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la misère du monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
     'jump bibliographie',
 ],
 
 
 'bibliographie':[
-	'a Tu trouveras la bibliographie dans le readme du jeu.',
+	'a Tu trouveras la bibliographie dans le readme du jeu qui est accessible dans les crédits quand tu reviendras à la page d’accueil !',
 	'a Thank you for playing, comme ils disent.',
 	'end',
 ],
