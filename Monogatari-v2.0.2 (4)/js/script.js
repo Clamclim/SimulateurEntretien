@@ -263,7 +263,7 @@ monogatari.script ({
 	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien.',
 		{
 			'Choice': {
-				'Dialog': 'a Est-ce que tu as déjà dû dirigé un entretien avant ?',
+				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien avant ?',
 				'Yes': {
 					'Text': 'Oui',
 					'Do': 'jump Yes'
@@ -277,7 +277,7 @@ monogatari.script ({
 	],
 
 	'Yes': [
-		'a Super, ce jeu va te permettre de voir si tu maîtrise bien cet exercice !',
+		'a Super, ce jeu va te permettre de voir si tu maîtrises bien cet exercice !',
 		'a Pour la suite du jeu, tu vas te plonger dans la peau d’un.e chercheur.euse en sciences sociales !',
 		'jump Intro'
 	],
@@ -335,7 +335,7 @@ monogatari.script ({
 		'play music café with loop',
 		'show scene coffee with fadeIn',
 		'show character c normal',
-		'a Tu repère Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
+		'a Tu repères Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 		'jump salutation'
 	],
 
@@ -380,7 +380,7 @@ monogatari.script ({
 
 'question1':[
 	'show character c normal',
-	'b Tout d’abbord, est-ce que vous pouvez rapidement vous présenter ?',
+	'b Tout d’abord, est-ce que vous pouvez rapidement vous présenter ?',
 	'show character c talk',
 	'c Oui bien sûr, par où commencer ?',
 	'c Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
@@ -532,7 +532,7 @@ monogatari.script ({
 
 'question6':[
 	'show character c talk',
-	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues on se dit souvent qu’être un peu plus ça ne les ferait pas passer dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
+	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues on se dit souvent qu’être un peu plus ça ne ferait pas passer la Cuup dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
 	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai pas le courage de faire plus que la promener pour ses besoins.',
 	{
 		'Choice':{
@@ -552,7 +552,7 @@ monogatari.script ({
 'horsSujet':[
 	'show message horsSujet',
 	'show character c happy',
-	'c Skippy, c’est une Berger Eurasiatique de pure race.',
+	'c Skippy, c’est une Berger Eurasiatique de pure race, mais attention contairement à la pluspart des Eura, elle...',
 	'show character c normal',
 	'b Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 	'jump question7',
@@ -564,7 +564,7 @@ monogatari.script ({
 	'show character c normal',
 	{
 		'Choice':{
-			'Dialog':'a Tendinite de caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
+			'Dialog':'a Tendinite de la caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
 			'Savoir':{
 				'Text':'Pour être sûr, c’est bien d’une tendinite du poignet dont il s’agit?',
 				'Do':'jump question8',
@@ -587,7 +587,7 @@ monogatari.script ({
 'question8':[
 	'show character c talk',
 	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. À force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
-	'c Ça s’appelle je crois dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
+	'c Ça s’appelle, je crois, dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
 	{
 		'Choice':{
@@ -597,7 +597,7 @@ monogatari.script ({
 				'Do':'jump directif',
 			},
 			'nonDirectif':{
-				'Text':'À propos de vos supérieurs, comment qualifieriez- vous votre rapport avec eux ?',
+				'Text':'À propos de vos supérieurs, comment qualifieriez-vous votre rapport avec eux ?',
 				'Do':'jump nonDirectif',
 			},
 		}
@@ -642,7 +642,7 @@ monogatari.script ({
 'avis':[
 	'b Vous savez c’est essentiel de se syndiquer pour revendiquer de meilleures conditions de travail.',
 	'show character c shoked',
-	'c euh mais je gagne déjà pas beaucoup d’argent, ça m’embête de cotiser.',
+	'c Euh mais je gagne déjà pas beaucoup d’argent, ça m’embête de cotiser.',
 	'b Vous ne pensez pas assez au collectif !',
 	'show character c angry',
 	'Pardon mais je vous permets pas de me dire ce genre de choses !',
@@ -695,11 +695,11 @@ monogatari.script ({
 		'Choice':{
 		'Dialog':'a Tu vois Laura te regarder et réfléchir deux secondes... te perçoit-elle comme ',
 			'GenreF':{
-				'Text':'a une femme ?',
+				'Text':'une femme ?',
 				'Do':'jump GenreF',
 			},
 			'GenreM':{
-				'Text':'a un homme ?',
+				'Text':'un homme ?',
 				'Do':'jump GenreM',
 			},
 		}
@@ -707,13 +707,13 @@ monogatari.script ({
 ],
 
 'GenreF':[
-	'show character c talk',
+	'show character c sad',
 	'c Récemment, j’ai un client qui est resté pendant 10 minutes devant ma caisse. Il me faisait des commentaires vraiment déplacés et je pouvais rien dire sinon ça aurait créé un scandale. Il y a toujours des gens qui profitent de la situation pour vous harceler, moi j’ai souvent le droit à des remarques sur mon physique.',
 	'show message GenreF',
 	'jump question13',
 ],
 'GenreM':[
-	'show character c talk',
+	'show character c sad',
 	'c Récemment, une mère et son enfant passent à ma caisse, et là la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame !” Je me suis sentie dévalorisée…',
 	'show message GenreM',
 	'jump question13',
@@ -722,9 +722,9 @@ monogatari.script ({
 'question13':[
 	'show character c normal',
 	'b Merci de partager ça ici en tout cas... ',
-	'b Est-ce que vous auriez aussi une bonne anecdote?',
+	'b Est-ce que vous auriez aussi une anecdote positive?',
 	'show character c talk',
-	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois. Il y a des vraies relations qui peuvent se créer...voilà',
+	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça, c’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois. Il y a des vraies relations qui peuvent se créer...voilà',
 	{
 		'Choice':{
 		'Dialog':'a ',
@@ -818,7 +818,7 @@ monogatari.script ({
 	'c Est-ce que c’est pas un peu trop personnel comme question?',
 	{
 		'Choice':{
-		'Dialog':'a Elle est inconfortable...',
+		'Dialog':'a Elle a  l’air inconfortable...',
 			'excuse15':{
 				'Text':'Désolé(e), ce n’était pas l’intention',
 				'Do':'jump excuse15',
@@ -845,9 +845,9 @@ monogatari.script ({
 		'jump question16',
 	],
 'exigence15': [
-		'show message exigence15',
-		'show character c contrariée',
+	    'show character c sad',
 		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
+		'show message exigence15',
 		'jump question16',
 	],
 
@@ -911,7 +911,7 @@ monogatari.script ({
 'fincool':[
 	'show character c talk',
 	'c Non je ne vois pas. Pour moi, c’est tout bon.',
-	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement.',
+	'b Très bien merci beaucoup pour votre temps et vos réponses. Je coupe l’enregistrement.',
 	'a Laura se lève et part.',
 	'hide character c',
 	'a Tu vas aussi pouvoir rentrer chez toi.',
@@ -978,13 +978,13 @@ monogatari.script ({
 	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
 	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
 	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté ! ',
-	'jump refléxivité3',
+	'jump reflexivité3',
 ],
 'ouibecker':[
 	'a “Lorsque j’enseigne le travail de terrain, j’insiste toujours auprès des étudiants pour qu’ils commencent leurs observations et leurs entretiens en notant « tout » dans leurs carnets. Je ne leur demande donc pas d’essayer d’échantillonner, mais bien plutôt d’essayer de compiler l’univers des occurrences « pertinentes ». Cela entraîne en général beaucoup de réticence de leur côté, et beaucoup de harcèlement du mien.' ,
 	'a Ils disent qu’ils ne peuvent pas le faire, ou qu’ils ne peuvent pas le faire « honnêtement » (voulant dire par là que ce qu’ils écrivent ne pourra jamais être ni complet ni totalement exact). Je leur réponds qu’ils ne pourront jamais savoir s’ils peuvent ou non le faire sans avoir essayé, et que le résultat de leurs tentatives de tout noter ne sera pas moins exact qu’une description qui laisserait énormément de choses de côté. Je leur suggère de s’acheter un tampon encreur portant la mention « cette transcription n’est ni complète ni totalement exacte » et de l’imprimer sur chacune de leurs pages de notes, pour les soulager de ce mélange de culpabilité et de paresse qui les assaille. Même si je me moque un peu d’eux, leur réticence cache en fait une saine défiance vis-à-vis d’une tâche dont nous venons de voir qu’elle était irréalisable à grande échelle.” (Becker, 2002, p.131)' ,
 	'a Si même les doctorants et doctorantes sont encore perdus, il n’y a aucune honte à avoir de ton côté ! ',
-	'jump refléxivité3',
+	'jump reflexivité3',
 ],
 
 'reflexivité3':[
