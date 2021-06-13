@@ -11,12 +11,12 @@ monogatari.component ('main-screen').template (() => {
 monogatari.action ('message').messages ({
 	'mauvaisEndroit': {
 		title: 'Un lieu pas très approprié',
-		body: 'Ce choix pourrait gené la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
+		body: 'Ce choix pourrait gêner la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
 	},
 
 	'moyenEndroit': {
 		title: 'Un lieu intimidant',
-		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine social de la personne interrogée, l’université peut être perçu comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais il faudra faire attention pour les prochaines fois.',
+		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine sociale de la personne interrogée, l’université peut être perçue comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais il faudra faire attention pour les prochaines fois.',
 	},
 
 	'noPrécision':{
@@ -26,7 +26,7 @@ monogatari.action ('message').messages ({
 
 	'pourquoi':{
 		title:'Comment et pourquoi',
-		body:'En demandant “pourquoi”, cela incite la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amené à faire certaines choses, tu obtiendras donc sûrement plus d’informations (Ink, 2016).',
+		body:'En demandant “pourquoi”, cela incite la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amenée à faire certaines choses, tu obtiendras donc sûrement plus d’informations (Ink, 2016).',
 	},
 
 	'personnelle1':{
@@ -66,7 +66,7 @@ monogatari.action ('message').messages ({
 
 	'directif':{
 		title:'Imposition de la thématique',
-		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici tu suggéres fortement une manière de répondre de ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici tu suggères fortement une manière de répondre de ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
 	},
 
 	'avis':{
@@ -86,7 +86,7 @@ monogatari.action ('message').messages ({
 
 	'sourire13':{
 		title:'Mauvaix choix',
-		body: 'Le "voilà" est un bon indicateur de fin de discours.',
+		body: 'Le "voilà" est un bon indicateur de fin de discours. Pour plus de détail, tu peux te référer à Sauvayre (2013).',
 	},
 
 	'conseil14':{
@@ -263,7 +263,7 @@ monogatari.script ({
 	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien.',
 		{
 			'Choice': {
-				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien avant ?',
+				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien de sciences sociales avant ?',
 				'Yes': {
 					'Text': 'Oui',
 					'Do': 'jump Yes'
@@ -374,7 +374,7 @@ monogatari.script ({
 	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
 	'show character c shoked',
 	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
-	'b Ah oui désolé de ne pas vous l’avoir rapeller.',
+	'b Ah oui désolé de ne pas vous l’avoir rappelé.',
 	'jump question1',
 ],
 
@@ -383,7 +383,7 @@ monogatari.script ({
 	'b Tout d’abord, est-ce que vous pouvez rapidement vous présenter ?',
 	'show character c talk',
 	'c Oui bien sûr, par où commencer ?',
-	'c Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'c Bon vous le savez, je m’appelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
 	'show character c normal',
 	{ 
 		'Choice':{
@@ -444,7 +444,7 @@ monogatari.script ({
 
 'question3':[
 	'show character c talk',
-	'c Au début, je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
+	'c Au début, je gérais le stock dans les rayons mais je suis montée à la caisse assez rapidement parce que je suis une personne souriante.',
 	'show character c normal',
 	{
 		'Choice':{
@@ -470,11 +470,12 @@ monogatari.script ({
 ],
 'question4':[
 	'show character c talk',
-	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas. Les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
+	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour.', 
+	' c Une fois en caisse, les heures ne se ressemblent pas. Les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
 	'show character c normal',
 	{
 		'Choice':{
-			'Dialog':'...',
+			'Dialog':'(silence)',
 			'sourire':{
 				'Text':'*Sourire et hocher la tête*',
 				'Do':'jump question5',
@@ -587,7 +588,7 @@ monogatari.script ({
 'question8':[
 	'show character c talk',
 	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. À force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
-	'c Ça s’appelle, je crois, dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
+	'c Ça s’appelle, je crois, dérangement squelettico-bidule… non, Trouble Musculo-Squelettique, voilà.',
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
 	{
 		'Choice':{
@@ -683,7 +684,7 @@ monogatari.script ({
 ],
 'choixmultiple11B':[
 	'show character c talk',
-	'c C’est chouette. On se soutient beaucoup parmi, quand il ny a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués...',
+	'c C’est chouette. On se soutient beaucoup parmi, quand il n’y a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués...',
 	'jump question12',
 ],
 
@@ -745,7 +746,7 @@ monogatari.script ({
 	'show character c talk',
 	'c Heu, voilà, j’ai rien à rajouter.',
 	'b Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
-	'jump question 14',
+	'jump question14',
 
 ],
 
