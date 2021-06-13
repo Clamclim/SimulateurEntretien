@@ -66,7 +66,7 @@ monogatari.action ('message').messages ({
 
 	'directif':{
 		title:'Imposition de la thématique',
-		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici tu suggères fortement une manière de répondre de ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici, tu suggères fortement une manière de répondre à ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
 	},
 
 	'avis':{
@@ -260,7 +260,7 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien. Pour une meilleure expérience, tu peux utiliser le mode full screen situé en bas à droite.',
+	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien. Pour une meilleure expérience, tu peux activé le mode full screen situé en bas à droite.',
 		{
 			'Choice': {
 				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien de sciences sociales précédemment ?',
@@ -344,7 +344,7 @@ monogatari.script ({
 	'c Bonjour !',
 	'show character c normal',
 	'b Bonjour, merci à vous d’avoir accepté de participer à cet entretien.',
-	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
+	'a tu prends place en face d’elle, la discussion va pouvoir commencer.',
 	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé.',
 	{ 
 		'Choice':{
@@ -730,7 +730,7 @@ monogatari.script ({
 		'Choice':{
 		'Dialog':'a ...',
 			'sourire13':{
-				'Text':'*Vous souriez et hôcher la tête*',
+				'Text':'*tu souris et hoche la tête*',
 				'Do':'jump sourire13',
 			},
 			'relance13':{
@@ -745,7 +745,7 @@ monogatari.script ({
 	'show message sourire13',
 	'show character c talk',
 	'c Heu, voilà, j’ai rien à rajouter.',
-	'b Ok... Et comment réagissez- vous quand il y a des clients désagréables ?',
+	'b Ok... Et comment réagissez-vous quand il y a des clients désagréables ?',
 	'jump question14',
 
 ],
