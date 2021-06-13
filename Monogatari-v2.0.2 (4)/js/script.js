@@ -326,8 +326,8 @@ monogatari.script ({
 	
 	'mauvaisEndroit':[
 		'stop music début',
-		'show message mauvaisEndroit',
 		'play sound GameOver',
+		'show message mauvaisEndroit',
 		'end',
 	],
 
@@ -354,7 +354,7 @@ monogatari.script ({
 	'show character c talk',
 	'c Bonjour !',
 	'show character c normal',
-	'b Bonjour, merci à vous d’avoir accepter de participer à cet entretien.',
+	'b Bonjour, merci à vous d’avoir accepté de participer à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
 	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
 	{ 
@@ -442,13 +442,13 @@ monogatari.script ({
 
 'personnelle1':[
 	'stop music',
+	'play sound GameOver',
 	'show message personnelle1',
 	'show character c angry',
 	'c Je vois pas en quoi ça vous concerne. Je préfère arrêter cet entretien',
 	'a Laura se lève et part.',
 	'hide character c',
-	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois',
-	'play sound GameOver',
+	'a Dommage pour cet entretien, tu feras peut-être mieux la prochaine fois...',
 	'end',
 ],
 
@@ -658,8 +658,8 @@ monogatari.script ({
 	'Pardon mais je vous permets pas de me dire ce genre de choses !',
 	'a Laura se lève et quitte la salle.',
 	'stop music',
-	'show message avis',
 	'play sound GameOver',
+	'show message avis',
 	'end',
 ],
 
@@ -815,8 +815,12 @@ monogatari.script ({
 
 'indiscret15':[
 	'stop music',
-	'show message indiscret15',
 	'play sound GameOver',
+	'show message indiscret15',
+	'show character c angry',
+	'c Je ne vois pas en quoi cette question va vous aider dans votre enquête.',
+	'c Je préfère arrêter ici cette discussion.',
+	'a Laura se lève et part. Tu auras peut-être plus de tact la prochaine fois...',
 	'end',
 ],
 'salaire15':[

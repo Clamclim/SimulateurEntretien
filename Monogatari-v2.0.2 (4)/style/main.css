@@ -51,13 +51,10 @@ button:hover {
 
 }
 
-[data-screen="h1"] {
-	text-align: center;
-
-}
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
+	background-color: rgb(255, 174, 68);
 
 }
 
@@ -109,6 +106,8 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
+	opacity: 0.9;
+	background-color: black;
 
 }
 
