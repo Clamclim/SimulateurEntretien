@@ -21,7 +21,7 @@ monogatari.action ('message').messages ({
 
 	'noPrécision':{
 		title:'Plutôt deux fois qu’une',
-		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter toutes mauvaises surprises.',
+		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter de mauvaises surprises.',
 	},
 
 	'pourquoi':{
@@ -56,7 +56,7 @@ monogatari.action ('message').messages ({
 
 	'horsSujet':{
 		title:'Hors sujet',
-		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
+		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. Tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquette?',
 	},
 
 	'nonSavoir':{
@@ -126,7 +126,7 @@ monogatari.action ('message').messages ({
 	},
 
 	'refle3':{
-		title:'La finitude du monde',
+		title:'Savoir fragmenté',
 		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie social est tout de même possible',
 	},
 
@@ -263,7 +263,7 @@ monogatari.script ({
 	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien!',
 		{
 			'Choice': {
-				'Dialog': 'a Est-ce que tu as déjà dû dirigé un entretien avant ?',
+				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien avant ?',
 				'Yes': {
 					'Text': 'Oui',
 					'Do': 'jump Yes'
@@ -284,13 +284,13 @@ monogatari.script ({
 
 	'No': [
 
-		'a Jamais ? Ce jeu va donc être une première approche pour essayer de comprendre comment bien mener un entretien.',
-		'a Pour la suite du jeu tu vas te plonger dans la peau d’un chercheur en sciences sociales',
+		'a Jamais ? Ce jeu va donc être une première approche pour essayer de comprendre comment mener à bien un entretien.',
+		'a Pour la suite du jeu tu vas te plonger dans la peau d’un.e chercheur.e en sciences sociales',
 		'jump Intro'
 	],
 	
 'Intro':[
-	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé-e-s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec Laura, une caissière qui a répondu à ton appel à témoignage.',
+	'a Dans le cadre d’une recherche nationale sur les conditions de travail des employé.e.s de supermarché en Suisse, tu as aujourd’hui rendez-vous avec Laura, une caissière qui a répondu à ton appel à témoignage.',
 		{
 			'Choice':{
 				'Dialog':'a Où as-tu décidé de donner rendez-vous à Laura ?',
@@ -335,7 +335,7 @@ monogatari.script ({
 		'play music café with loop',
 		'show scene coffee with fadeIn',
 		'show character c normal',
-		'a Tu repère Laura déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
+		'a Tu repères Laura. Elle est déjà assise à une table au fond de la salle. Tu te diriges vers elle.',
 		'jump salutation'
 	],
 
@@ -345,7 +345,7 @@ monogatari.script ({
 	'show character c normal',
 	'b Bonjour, merci à vous d’avoir accepté de participer à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
-	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
+	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé.',
 	{ 
 		'Choice':{
 			'Dialog': 'a Est-ce que tu veux lui rappeler ces précisions ?',
@@ -371,18 +371,18 @@ monogatari.script ({
 
 'noPrécision':[
 	'show message noPrécision',
-	'a Tu sors ton dictaphone et commence tout de suite à enregistrer',
+	'a Tu sors ton dictaphone et commences tout de suite à enregistrer',
 	'show character c shoked',
-	'c Juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
-	'b Ah oui désolé de ne pas vous l’avoir redit.',
+	'c C’est juste, vous aviez dit que ça allait être enregistré. J’avais oublié...',
+	'b Ah oui désolé de ne pas vous l’avoir répété.',
 	'jump question1',
 ],
 
 'question1':[
 	'show character c normal',
-	'b Tout, d’abbord est-ce que vous pouvez rapidement vous présentez ?',
+	'b Tout, d’abord, est-ce que vous pouvez rapidement vous présenter ?',
 	'show character c talk',
-	'c Oui bien sûr, par où commencer ? Bon vous le savez, je mappelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
+	'c Oui bien sûr, par où commencer ? Bon vous le savez, je m’appelle Laura. J’ai 32 ans, je suis mariée, j’ai une fille de 8 ans qui vient de rentrer en 5P. Je travaille comme caissière à 80% à la Cuup du centre commercial de Crussier depuis 10 ans.',
 	'show character c normal',
 	{ 
 		'Choice':{
@@ -443,7 +443,7 @@ monogatari.script ({
 
 'question3':[
 	'show character c talk',
-	'c Au début je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
+	'c Au début je gérais le stock dans les rayons, mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
 	'show character c normal',
 	{
 		'Choice':{
@@ -469,7 +469,7 @@ monogatari.script ({
 ],
 'question4':[
 	'show character c talk',
-	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas, les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
+	'c Alors oui mais ce n’est pas facile. Nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas, les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
 	'show character c normal',
 	{
 		'Choice':{
@@ -501,14 +501,14 @@ monogatari.script ({
 
 'question5':[
 	'show character c talk',
-	'c … ranger les articles erronés des clients distraits, mettre en ordre des rayons, mais ça, ça dépend en plus des jours, pas tous les jours ont le droit au même effectif… Ils font toujours en sorte qu’on doive courir quoi.',
+	'c … ranger les articles erronés des clients distraits, mettre en ordre des rayons, mais ça, ça dépend en plus des jours. Pas tous les jours ont le droit au même effectif… Ils font toujours en sorte qu’on doive courir quoi.',
 	'show character c happy',
 	'show character c normal',
 	'c Et puis, évidemment, les heures pleines, on scanne à plein régime.',
 	'b Merci pour les précisions, c’est justement un des points que nous souhaitions développer dans notre entretien.',
 	{
 		'Choice':{
-			'Dialog':'a Sélectionne la question.',
+			'Dialog':'a Sélectionne la question',
 			'scientifique':{
 				'Text':'Comment vivez-vous ce régime néolibéral de management néoclassique?',
 				'Do':'jump scientifique',
@@ -531,8 +531,8 @@ monogatari.script ({
 
 'question6':[
 	'show character c talk',
-	'c C’est éreintant! On finit les journées sur les talons, avec les collègues on se dit souvent qu’être un peu plus ça ne les ferait pas passer dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
-	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai le courage de faire plus que la promener pour ces besoins.',
+	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues, on se dit souvent qu’être un peu plus ça ne ferait pas passer Cuup dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
+	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai pas le courage de faire plus que la sortir pour ses besoins.',
 	{
 		'Choice':{
 			'Dialog':'a C’est le moment de relancer.',
@@ -549,9 +549,9 @@ monogatari.script ({
 ],
 
 'horsSujet':[
-	'show message horsSujet',
 	'show character c happy',
-	'c Skippy, c’est une Berger Eurasiatique de pure race.',
+	'c Skippy, c’est une Berger Eurasiatique de pure race mais attention contairement à la pluspart des eurasia elle...',
+	'show message horsSujet',
 	'show character c normal',
 	'b Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 	'jump question7',
@@ -559,17 +559,17 @@ monogatari.script ({
 
 'question7':[
 	'show character c talk',
-	'c Oui bien sûr, les dos bloqués on connaît toutes. Il y a également l’immanquable tendinite de la caissière que j’ai eu l’année passée par exemple.',
+	'c Oui bien sûr, les dos bloqués on connaît toutes. Il y a également l’immanquable tendinite de la caissière que j’ai eu l’année passée, par exemple.',
 	'show character c normal',
 	{
 		'Choice':{
-			'Dialog':'a Tendinite de caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
+			'Dialog':'a Tendinite de la caissière ? Je n’ai jamais entendu ce terme... Et toi ?',
 			'Savoir':{
-				'Text':'Pour être sûr, c’est bien une tendinite du poignet dont il s’agit?',
+				'Text':'Pour être sûr, c’est bien d’une tendinite du poignet dont il s’agit?',
 				'Do':'jump question8',
 			},
 			'nonSavoir':{
-				'Text':'Ah c’est fou, j’aurai jamais pensé que caissier avait ses propres problèmes de santé.',
+				'Text':'Ah c’est fou, j’aurai jamais pensé que les caissiers avaient leurs propres problèmes de santé.',
 				'Do':'jump nonSavoir',
 			},
 		}
@@ -586,7 +586,7 @@ monogatari.script ({
 'question8':[
 	'show character c talk',
 	'c Ah oui pardon, on l’appelle comme ça dans le milieu parce que ça touche beaucoup d’entre nous. A force de faire les mêmes mouvements vous savez ça fatigue forcément le muscle.',
-	'c Ça s’appelle je crois dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
+	'c Ça s’appelle, je crois, dérangement squelettico-bidule… non, Trouble Musculo-Squelettiques, voilà.',
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
 	{
 		'Choice':{
@@ -596,7 +596,7 @@ monogatari.script ({
 				'Do':'jump directif',
 			},
 			'nonDirectif':{
-				'Text':'À propos de vos supérieurs, comment qualifieriez- vous votre rapport avec eux ?',
+				'Text':'À propos de vos supérieurs, comment qualifieriez-vous votre rapport avec eux ?',
 				'Do':'jump nonDirectif',
 			},
 		}
@@ -606,20 +606,20 @@ monogatari.script ({
 'directif':[
 	'show message directif',
 	'show character c shoked',
-	'c Non, non, je ne pense pas. J’entretiens de très bonnes relations avec la plupart d’entre eux. C’est normal ce qu’il nous demande.',
+	'c Non, non, je ne pense pas. J’entretiens de très bonnes relations avec la plupart d’entre eux. C’est normal ce qu’ils nous demandent.',
 	'jump question9',
 ],
 
 'nonDirectif':[
 	'show character c talk',
 	'c C’est vrai que des fois, ils peuvent nous mettre une certaine pression pour s’assurer qu’on travaille assez vite.',
-	'c Des fois on a presque l’impression qu’ils profitent des exigences des clients pour nous demander de travailler plus. Quand il y a beaucoup de gens, c’est plus difficile de se justifier pour prendre une pause alors qu’on y a droit !',
+	'c Des fois, on a presque l’impression qu’ils profitent des exigences des clients pour nous demander de travailler plus. Quand il y a beaucoup de gens, c’est plus difficile de se justifier pour prendre une pause alors qu’on y a droit !',
 	'jump question9',
 ],
 
 'question9':[
 	'show character c normal',
-	'b Et sinon est-ce que vous êtes syndiquée ou bien est-ce que certaines de vos collègues le sont ?',
+	'b Et sinon, est-ce que vous êtes syndiquée ou bien est-ce que certaines de vos collègues le sont ?',
 	'show character c talk',
 	'c Non, je n’ai jamais ressenti le besoin de me syndiquer et je ne connais aucune de mes collègues qui le soit...',
 	'show character c normal',
@@ -655,7 +655,7 @@ monogatari.script ({
 'question10':[
 	'b Est-ce que vous envisagez de vous syndiquer ?',
 	'show character c talk',
-	'c J’y ai jamais vraiment pensé je dois avouer. Et puis, c’est déjà assez compliqué de finir les fins de mois donc si je devais cotiser en plus... ',
+	'c J’y ai jamais vraiment pensé je dois avouer. Et puis, c’est déjà assez compliqué de finir les fins de mois. Donc si je devais cotiser en plus... ',
 	'jump question11'
 ],
 'question11':[
@@ -694,11 +694,11 @@ monogatari.script ({
 		'Choice':{
 		'Dialog':'a *tu vois Laura te regarder et réfléchir deux secondes... te perçoit-elle comme ',
 			'GenreF':{
-				'Text':'a une femme?',
+				'Text':'une femme?',
 				'Do':'jump GenreF',
 			},
 			'GenreM':{
-				'Text':'a un homme?',
+				'Text':'un homme?',
 				'Do':'jump GenreM',
 			},
 		}
@@ -706,27 +706,27 @@ monogatari.script ({
 ],
 
 'GenreF':[
-	'show character c talk',
+	'show character c sad',
 	'c Récemment, j’ai un client qui est resté pendant 10 minutes devant ma caisse. Il me faisait des commentaires vraiment déplacés et je pouvais rien dire sinon ça aurait créé un scandale. Il y a toujours des gens qui profitent de la situation pour vous harceler, moi j’ai souvent le droit à des remarques sur mon physique.',
 	'show message GenreF',
 	'jump question13',
 ],
 'GenreM':[
-	'show character c talk',
-	'c Récemment, une mère et son enfant passent à ma caisse, et là la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame!” Je me suis sentie dévalorisée…',
+	'show character c sad',
+	'c Récemment, une mère et son enfant passent à ma caisse, et là, la mère lui dit “Eh bien tu vois, si tu ne travailles pas à l’école, tu finiras comme la dame!” Je me suis sentie dévalorisée…',
 	'show message GenreM',
 	'jump question13',
 ],
 
 'question13':[
 	'show character c normal',
-	'b merci de partager ça ici en tout cas... ',
+	'b Merci de partager ça ici en tout cas... ',
 	'b Est-ce que vous auriez aussi une bonne anecdote?',
 	'show character c talk',
 	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça s’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois et il y a des vraies relations qui peuvent se créer... voilà',
 	{
 		'Choice':{
-		'Dialog':'a ',
+		'Dialog':'a Après cet arrêt, comment réagis-tu?',
 			'sourire13':{
 				'Text':'*Vous souriez et hôcher la tête*',
 				'Do':'jump sourire13',
@@ -813,11 +813,11 @@ monogatari.script ({
 	'end',
 ],
 'salaire15':[
-	'show character c contrariée',
+	'show character c sad',
 	'c Est-ce que c’est pas un peu trop personnel comme question?',
 	{
 		'Choice':{
-		'Dialog':'a elle est inconfortable...',
+		'Dialog':'a Elle a l’air inconfortable...',
 			'excuse15':{
 				'Text':'Désolé(e), ce n’était pas l’intention.',
 				'Do':'jump excuse15',
@@ -845,7 +845,7 @@ monogatari.script ({
 	],
 'exigence15': [
 		'show message exigence15',
-		'show character c contrariée',
+		'show character c sad',
 		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
 		'jump question16',
 	],
@@ -875,7 +875,7 @@ monogatari.script ({
 ],
 'QCM16B':[
 	'show character c talk',
-	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer pour mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
+	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer pour nous. Mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
 	'jump question17',
 ],
 
@@ -916,7 +916,7 @@ monogatari.script ({
 	'play music fin with loop',
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
-	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation?',
+	'a L’entretien se termine avec un savoir incomplet. Que penses-tu de cette situation?',
 	{
 		'Choice':{
 			'refle1':{
@@ -981,7 +981,7 @@ monogatari.script ({
 	'jump refléxivité3',
 ],
 
-'reflexivité3':[
+'refléxivité3':[
 	'a Les entretiens réels sont tous singuliers et uniques. (Blachet et al., 1985). Puisque cet entretien est simulé et qu’il est possible de relancer la discussion autant de fois que désiré, il n’est pas représentatif de ce qui va se passer pour vos propres entretiens. Nous espérons cependant que cette esquisse de mise en contexte a pu te permettre de te projeter dans de futures situations',
 	'a Nous n’avons pas créé les questions et les réponses au hasard. Les réponses fictives de Laura nous ont été inspirées par deux ouvrages et par des entretiens auprès de caissière menés dans un autre cours',
 	'a Les deux ouvrages sont “Caissière... et après : Une enquête parmi les travailleurs de la grande distribution” et “Être caissière (caissier)” de Bernard (2011).',
