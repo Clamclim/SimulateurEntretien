@@ -56,7 +56,7 @@ monogatari.action ('message').messages ({
 
 	'horsSujet':{
 		title:'Hors sujet',
-		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pendant qu’elle énumère les croquettes préférées de sa boule de poil. Tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquettes?',
+		body: 'Tu te rends compte que tu as lancé ton enquêtée sur un thème complètement hors sujet. Tu attends une seconde d’hésitation pour recadrer pendant qu’elle énumère les croquettes préférées de sa boule de poil. Tu devras retranscrire tout ça… Est-ce que tu dois également anonymiser la marque de croquettes?',
 	},
 
 	'nonSavoir':{
@@ -260,7 +260,7 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} ! Bievenue sur ce simulateur d’entretien.',
+	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien.',
 		{
 			'Choice': {
 				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien avant ?',
@@ -345,7 +345,7 @@ monogatari.script ({
 	'show character c normal',
 	'b Bonjour, merci à vous d’avoir accepté de participer à cet entretien.',
 	'a Vous prenez place en face d’elle, la discussion va pouvoir commencer.',
-	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé. Est-ce que tu veux lui rappeler ces précisions ?',
+	'a Tu lui avais envoyé un mail pour l’informer que l’entretien serait enregistré et anonymisé.',
 	{ 
 		'Choice':{
 			'Dialog': 'a Est-ce que tu veux lui rappeler ces précisions ?',
@@ -444,7 +444,7 @@ monogatari.script ({
 
 'question3':[
 	'show character c talk',
-	'c Au début je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
+	'c Au début, je gérais le stock dans les rayons mais je suis monter à la caisse assez rapidement parce que je suis une personne souriante.',
 	'show character c normal',
 	{
 		'Choice':{
@@ -470,7 +470,7 @@ monogatari.script ({
 ],
 'question4':[
 	'show character c talk',
-	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas, les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
+	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour. Une fois en caisse, les heures ne se ressemblent pas. Les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
 	'show character c normal',
 	{
 		'Choice':{
@@ -532,7 +532,7 @@ monogatari.script ({
 
 'question6':[
 	'show character c talk',
-	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues on se dit souvent qu’être un peu plus ça ne ferait pas passer la Cuup dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
+	'c C’est éreintant! On finit les journées sur les rotules, avec les collègues on se dit souvent qu’être un peu plus, ça ne ferait pas passer la Cuup dans le rouge. On arrive chez nous et on est trop crevé pour sortir le chien.',
 	'c La pauvre me fend le cœur, elle veut jouer et moi j’ai pas le courage de faire plus que la promener pour ses besoins.',
 	{
 		'Choice':{
@@ -550,11 +550,11 @@ monogatari.script ({
 ],
 
 'horsSujet':[
-	'show message horsSujet',
 	'show character c happy',
 	'c Skippy, c’est une Berger Eurasiatique de pure race, mais attention contairement à la pluspart des Eura, elle...',
-	'show character c normal',
+	'show message horsSujet',
 	'b Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
+	'show character c normal',
 	'jump question7',
 ],
 
@@ -570,7 +570,7 @@ monogatari.script ({
 				'Do':'jump question8',
 			},
 			'nonSavoir':{
-				'Text':'Ah c’est fou, j’aurai jamais pensé que les caissières avaient leurs propres problèmes de santé.',
+				'Text':'Ah c’est fou, j’aurai jamais pensé que les caissières avaient leurs propres problèmes de santé. Qu’est ce que c’est?',
 				'Do':'jump nonSavoir',
 			},
 		}
@@ -591,7 +591,7 @@ monogatari.script ({
 	'c Et puis c’est qu’on doit être rapide sinon on peut avoir des plaintes des clients, et après ça passe pas très bien avec les supérieurs.',
 	{
 		'Choice':{
-		'Dialog':'a C’est une bonne occasion pour rebondir sur une question sur son rapport à la hiérarchie',
+		'Dialog':'a C’est une bonne occasion pour rebondir avec une question sur son rapport à la hiérarchie',
 			'directif':{
 				'Text':'Vous voulez dire que vous êtes exploitée ?',
 				'Do':'jump directif',
@@ -632,7 +632,7 @@ monogatari.script ({
 				'Do':'jump question10',
 			},
 			'nonAvis':{
-				'Text':'Donner ton avis',
+				'Text':'Donne ton avis',
 				'Do':'jump avis',
 			},
 		}
@@ -727,7 +727,7 @@ monogatari.script ({
 	'c Pas particulièrement, mais il y a des clients que je connais depuis des années et ça, c’est vraiment agréable. Ils me donnent de leurs nouvelles à chaque fois. Il y a des vraies relations qui peuvent se créer...voilà',
 	{
 		'Choice':{
-		'Dialog':'a ',
+		'Dialog':'a ...',
 			'sourire13':{
 				'Text':'*Vous souriez et hôcher la tête*',
 				'Do':'jump sourire13',
@@ -814,11 +814,11 @@ monogatari.script ({
 	'end',
 ],
 'salaire15':[
-	'show character c contrariée',
+	'show character c sad',
 	'c Est-ce que c’est pas un peu trop personnel comme question?',
 	{
 		'Choice':{
-		'Dialog':'a Elle a  l’air inconfortable...',
+		'Dialog':'a Elle a l’air inconfortable...',
 			'excuse15':{
 				'Text':'Désolé(e), ce n’était pas l’intention',
 				'Do':'jump excuse15',
@@ -845,9 +845,10 @@ monogatari.script ({
 		'jump question16',
 	],
 'exigence15': [
-	    'show character c sad',
-		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
 		'show message exigence15',
+		'show character c sad',
+		'c Je suis à 4’000 CHF par mois mais comme j’ai bientôt dix ans de service, ça devrait un poil augmenter.',
+
 		'jump question16',
 	],
 
@@ -902,7 +903,7 @@ monogatari.script ({
 	'show message brutend',
 	'show character c talk',
 	'c Merci à vous, j’espère que mes réponses auront pu vous aider !',
-	'b Très bien merci beaucoup pour votre temps et vos réponses, je coupe l’enregistrement',
+	'b Très bien, merci beaucoup pour votre temps et vos réponses. Je coupe l’enregistrement',
 	'a Laura se lève et part.',
 	'hide character c',
 	'a Tu vas aussi pouvoir rentrer chez toi.',
@@ -911,7 +912,7 @@ monogatari.script ({
 'fincool':[
 	'show character c talk',
 	'c Non je ne vois pas. Pour moi, c’est tout bon.',
-	'b Très bien merci beaucoup pour votre temps et vos réponses. Je coupe l’enregistrement.',
+	'b Très bien, merci beaucoup pour votre temps et vos réponses. Je coupe l’enregistrement.',
 	'a Laura se lève et part.',
 	'hide character c',
 	'a Tu vas aussi pouvoir rentrer chez toi.',
@@ -988,12 +989,12 @@ monogatari.script ({
 ],
 
 'reflexivité3':[
-	'a Les entretiens réels sont tous singuliers et uniques. (Blachet et al., 1985). Puisque cet entretien est simulé et qu’il est possible de relancer la discussion autant de fois que désiré, il n’est pas représentatif de ce qui va se passer pour vos propres entretiens. Nous espérons cependant que cette esquisse de mise en contexte a pu te permettre de te projeter dans de futures situations',
+	'a Les entretiens réels sont tous singuliers et uniques. (Blanchet et al., 1985). Puisque cet entretien est simulé et qu’il est possible de relancer la discussion autant de fois que désiré, il n’est pas représentatif de ce qui va se passer pour vos propres entretiens. Nous espérons cependant que cette esquisse de mise en contexte a pu te permettre de te projeter dans de futures situations',
 	'a Nous n’avons pas créé les questions et les réponses au hasard. Les réponses fictives de Laura nous ont été inspirées par deux ouvrages et par des entretiens auprès de caissière menés dans un autre cours.',
-	'a Les deux ouvrages sont “Caissière... et après : Une enquête parmi les travailleurs de la grande distribution” et “Être caissière (caissier)” de Bernard (2011).',
+	'a Les deux ouvrages sont “Caissière... et après : Une enquête parmi les travailleurs de la grande distribution” de Waelli (2009) et “Être caissière (caissier)” de Bernard (2011).',
 	'a Tu trouveras dans la bibliographie les références exactes, mais nous pouvons signaler d’autre matériaux de vulgarisation non utilisé ici, comme le compte rendu d’un séminaire de direction d’entretien par Marion Ink (https://mastersociologie.hypotheses.org/3342)',
-	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants. Ou encore l’ouvrage d’introduction des Pinçon-Charlot : Voyage en grande bourgeoisie: Journal d’enquête. (2005).',
-    'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la misère du monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
+	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : " "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants". Ou encore l’ouvrage d’introduction des Pinçon-Charlot : "Voyage en grande bourgeoisie: Journal d’enquête". (2005).',
+    'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la Misère du Monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
     'jump bibliographie',
 ],
 
