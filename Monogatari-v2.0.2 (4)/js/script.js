@@ -14,7 +14,7 @@ monogatari.action ('message').messages ({
 		body: 'Ce choix pourrait gêner la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
 	},
 
-	'moyenEndroit': {
+	'oyenEndroit': {
 		title: 'Un lieu intimidant',
 		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine sociale de la personne interrogée, l’université peut être perçue comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais il faudra faire attention pour les prochaines fois.',
 	},
@@ -260,7 +260,7 @@ monogatari.script ({
 				'Attention': 'Avant de commencer tu dois entrer un prénom!'
 			}
 		},
-	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien. Pour une meilleure expérience, tu peux activé le mode full screen situé en bas à droite.',
+	'a Salut {{player.name}} ! Bienvenue sur ce simulateur d’entretien. Pour une meilleure expérience, tu peux activer le mode full screen situé en bas à droite.',
 		{
 			'Choice': {
 				'Dialog': 'a Est-ce que tu as déjà dû diriger un entretien de sciences sociales précédemment ?',
