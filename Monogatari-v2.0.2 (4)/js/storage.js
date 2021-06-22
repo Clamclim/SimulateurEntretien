@@ -4,5 +4,9 @@
 monogatari.storage ({
 	player: {
 		name: ''
-	}
+	},
+    score: {
+        point: 0
+    } 
+
 });
