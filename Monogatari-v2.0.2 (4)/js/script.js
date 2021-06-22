@@ -306,12 +306,10 @@ monogatari.script ({
 	
 				'Dans un café':{
 					'Text': 'Dans un café',
-					'Do' : 'jump bonEndroit',
 					'onChosen': function (){
-						monogatari.storage().score = point+1
-
-
-					}
+						monogatari.storage().score.point += 1
+					}, 
+					'Do' : 'jump bonEndroit',	
 					
 				},
 			}
@@ -359,8 +357,7 @@ monogatari.script ({
 				'Text': 'Oui',
 				'Do': 'jump précision',
 				'onChosen': function (){
-					monogatari.storage().score = point+1
-
+					monogatari.storage().score += 1
 
 				}
 			},
@@ -406,6 +403,10 @@ monogatari.script ({
 			'comment':{
 				'Text': 'Comment êtes-vous devenue caissière ?',
 				'Do': 'jump comment',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -436,6 +437,10 @@ monogatari.script ({
 			'normal':{
 				'Text': 'Vous avez toujours travaillé à la caisse ?',
 				'Do': 'jump question3',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -467,6 +472,10 @@ monogatari.script ({
 			'question4':{
 				'Text':'Est-ce que vous pourriez essayer de nous décrire une journée type ?',
 				'Do':'jump question4',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			}
 		}
 	}
@@ -490,6 +499,10 @@ monogatari.script ({
 			'sourire':{
 				'Text':'*Sourire et hocher la tête*',
 				'Do':'jump question5',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'relance':{
 				'Text':'Est-ce que vous auriez un exemple ?',
@@ -529,6 +542,10 @@ monogatari.script ({
 			'vulgarisée':{
 				'Text':'Comment vivez-vous au quotidien cette course perpétuelle ?',
 				'Do':'jump question6',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -552,6 +569,10 @@ monogatari.script ({
 			'bonSujet':{
 				'Text':'Vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 				'Do':'jump question7',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'horsSujet':{
 				'Text':'Ah oui, comment s’appelle votre chien ?',
@@ -580,6 +601,10 @@ monogatari.script ({
 			'Savoir':{
 				'Text':'Pour être sûr, c’est bien d’une tendinite du poignet dont il s’agit?',
 				'Do':'jump question8',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'nonSavoir':{
 				'Text':'Ah c’est fou, j’aurai jamais pensé que les caissières avaient leurs propres problèmes de santé. Qu’est ce que c’est?',
@@ -611,6 +636,10 @@ monogatari.script ({
 			'nonDirectif':{
 				'Text':'À propos de vos supérieurs, comment qualifieriez-vous votre rapport avec eux ?',
 				'Do':'jump nonDirectif',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -642,6 +671,10 @@ monogatari.script ({
 			'avis':{
 				'Text':'Demande de développer',
 				'Do':'jump question10',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'nonAvis':{
 				'Text':'Donne ton avis',
@@ -679,10 +712,18 @@ monogatari.script ({
 			'choixmultiple11A':{
 				'Text':'Comment se passent les relations avec les clients ?',
 				'Do':'jump choixmultiple11A',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'choixmultiple11B':{
 				'Text':'Comment se passent les relations entre collègues ?',
 				'Do':'jump choixmultiple11B',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -747,6 +788,10 @@ monogatari.script ({
 			'relance13':{
 				'Text':'Et comment réagissez-vous quand il y a des clients désagréables ?',
 				'Do':'jump question14',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -771,6 +816,10 @@ monogatari.script ({
 			'oki14':{
 				'Text':'Ok, je vois.',
 				'Do':'jump question15',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'conseil14':{
 				'Text':'Vous pourriez quand même leur dire quelque chose...',
@@ -810,6 +859,10 @@ monogatari.script ({
 			'salaire15':{
 				'Text':'Quel est votre salaire ?',
 				'Do':'jump salaire15',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -838,6 +891,10 @@ monogatari.script ({
 			'justification15':{
 				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentielle, mais vous n’êtes pas obligée d’y répondre',
 				'Do':'jump justification15',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'exigence15':{
 				'Text':'C’est une information essentielle dans notre situation',
@@ -873,10 +930,18 @@ monogatari.script ({
 			'QCM16A':{
 				'Text':'Est-ce que vous vous voyez encore à ce poste dans 10 ans ?',
 				'Do':'jump QCM16A',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'QCM16B':{
 				'Text':'Vous avez des craintes liées à votre profession actuellement ?',
 				'Do':'jump QCM16B',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -900,12 +965,16 @@ monogatari.script ({
 	{
 		'Choice':{
 			'brutend':{
-				'Text':'Merci de votre participation, toute mes questions ont été posées !',
+				'Text':'Merci de votre participation, toutes mes questions ont été posées !',
 				'Do':'jump brutend',
 			},
 			'fincool':{
 				'Text':'Vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question ?',
 				'Do':'jump fincool',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -942,6 +1011,10 @@ monogatari.script ({
 			'refle1':{
 				'Text':'Il me semble avoir fait au mieux, le sujet ne peut pas s’épuiser aussi rapidement',
 				'Do':'jump refle1',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'refle2':{
 				'Text':'Si j’avais mieux mené l’entretien, ça ne serait pas le cas',
@@ -950,6 +1023,10 @@ monogatari.script ({
 			'refle3':{
 				'Text':'Je ne peux rien y faire, on ne saura jamais tout de toute façon',
 				'Do':'jump refle3',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -977,10 +1054,18 @@ monogatari.script ({
 			'nonbecker':{
 				'Text':'Non',
 				'Do':'jump nonbecker',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 			'ouibecker':{
 				'Text':'Oui',
 				'Do':'jump ouibecker',
+				'onChosen': function (){
+					monogatari.storage().score += 1
+
+				}
 			},
 		}
 	}
@@ -1007,9 +1092,14 @@ monogatari.script ({
 	'a Tu trouveras dans la bibliographie les références exactes, mais nous pouvons signaler d’autre matériaux de vulgarisation non utilisé ici, comme le compte rendu d’un séminaire de direction d’entretien par Marion Ink (https://mastersociologie.hypotheses.org/3342)',
 	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : " "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants". Ou encore l’ouvrage d’introduction des Pinçon-Charlot : "Voyage en grande bourgeoisie: Journal d’enquête". (2005).',
     'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la Misère du Monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
-    'jump bibliographie',
+    'jump resultat',
 ],
 
+'resultat':[
+	'a Tu as eu {{score.point}} sur 20, soit {{score.point}/20*100}%!',
+	'a Est-ce qu’il est pour autant possible de transposer ce score à la valeur de ton entretien?',
+    'jump bibliographie',
+],
 
 'bibliographie':[
 	'a Tu trouveras la bibliographie dans le readme du jeu qui est accessible dans les crédits quand tu reviendras à la page d’accueil !',
