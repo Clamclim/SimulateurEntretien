@@ -14,7 +14,7 @@ monogatari.action ('message').messages ({
 		body: 'Ce choix pourrait gêner la personne interrogée. Il est trop personnel, peut-être que choisir un lieu plus neutre fonctionnera mieux pour la prochaine fois. Laura a malheureusement refusé cette invitation.',
 	},
 
-	'oyenEndroit': {
+	'moyenEndroit': {
 		title: 'Un lieu intimidant',
 		body: 'Laura pourrait ressentir une forme de violence symbolique dans ce lieu. Selon l’origine sociale de la personne interrogée, l’université peut être perçue comme lieu inconnu et porteur de jugement. Pour aujourd’hui ce n’est pas un problème mais il faudra faire attention pour les prochaines fois.',
 	},
@@ -26,32 +26,32 @@ monogatari.action ('message').messages ({
 
 	'pourquoi':{
 		title:'Comment et pourquoi',
-		body:'En demandant “pourquoi”, cela incite la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amenée à faire certaines choses, tu obtiendras donc sûrement plus d’informations (Ink, 2016).',
+		body:'En demandant “pourquoi”, cela incite la personne à se justifier et la réponse sera sûrement brève et sur la défensive. Une question en “comment” permet à la personne de développer une histoire sur ce qui l’a amenée à faire certaines choses, tu obtiendras donc sûrement plus d’informations (<a href=https://mastersociologie.hypotheses.org/3342 target="_blank"> Ink, 2016</a>).',
 	},
 
 	'personnelle1':{
 		title:'Trop personnelle',
-		body:'Â ce moment de l’entretien poser cette question n’est pas approprié. C’est une question personnelle très intrusive et, dans ce contexte, elle pourrait paraître jugeante sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (Campenhoudt et Quivy, 2011).',
+		body:'Â ce moment de l’entretien poser cette question n’est pas approprié. C’est une question personnelle très intrusive et, dans ce contexte, elle pourrait paraître jugeante sur sa situation professionnelle. Les questions personnelles sont généralement posées en fin d’entretien afin de ne pas braquer la personne (<a href=https://univ.scholarvox.com/book/88813728 target="_blank">Campenhoudt et Quivy, 2011</a>).',
 	},
 
 	'multipleQuestion':{
 		title:'Trop confus',
-		body: 'Il y a trop de questions. Ton interlocutrice risque d’en oublier avec sa réponse (Ink, 2016). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites en amont peuvent rendre l’entretien moins brouillon.',
+		body: 'Il y a trop de questions. Ton interlocutrice risque d’en oublier avec sa réponse (<a href=https://mastersociologie.hypotheses.org/3342 target="_blank"> Ink, 2016</a>). Poser une question précise n’est pas facile, c’est pour cela qu’un canevas et quelques questions écrites en amont peuvent rendre l’entretien moins brouillon.',
 	},
 
 	'relance':{
 		title:'Laisser le temps',
-		body: 'Parfois, il suffit de laisser du temps à la personne pour qu’elle trouve ses mots. Sauvayre (2013) propose d’identifier les silences de réflexion et ceux de fin de discours.',
+		body: 'Parfois, il suffit de laisser du temps à la personne pour qu’elle trouve ses mots. <a href=https://www.cairn.info/les-methodes-de-l-entretien-en-sciences-sociales--9782100579709-page-49.htm target="_blank">Sauvayre (2013)</a> propose d’identifier les silences de réflexion et ceux de fin de discours.',
 	},
 
 	'rien':{
 		title:'Un sourire pour encourager',
-		body: 'Des encouragements à continuer peuvent aider la personne à approfondir. Sauvayre (2013) élabore sur les réactions face aux silences.',
+		body: 'Des encouragements à continuer peuvent aider la personne à approfondir. <a href=https://www.cairn.info/les-methodes-de-l-entretien-en-sciences-sociales--9782100579709-page-49.htm target="_blank">Sauvayre (2013)</a> élabore sur les réactions face aux silences.',
 	},
 
 	'scientifique':{
 		title:'Les mots du ou de la chercheur.euse',
-		body: 'Les questionnements des enquêteur.trice.s ne sont pas les soucis quotidiens des enquêté.e.s. La reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou Quivy et Van Campenhoudt (2017) pour diverses critiques de ce problème.',
+		body: 'Les questionnements des enquêteur.trice.s ne sont pas les soucis quotidiens des enquêté.e.s. La reconstitution théorique des vécus se fait en amont ou en aval, mais pas pendant l’entretien. Voir par exemple Beaud et Weber (2003), Becker (2002) ou <a href= https://univ.scholarvox.com/book/88813728 target="_blank">Campenhoudt et Quivy (2011)</a> pour diverses critiques de ce problème.',
 	},
 
 	'horsSujet':{
@@ -66,7 +66,7 @@ monogatari.action ('message').messages ({
 
 	'directif':{
 		title:'Imposition de la thématique',
-		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici, tu suggères fortement une manière de répondre à ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de Meyer (1996) adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici, tu suggères fortement une manière de répondre à ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de <a href=https://www.persee.fr/doc/rfsoc_0035-2969_1995_num_36_2_4407 target="_blank">Mayer (1996)</a> adressée à Bourdieu sur une imposition de termes est proche de la situation.',
 	},
 
 	'avis':{
@@ -86,7 +86,7 @@ monogatari.action ('message').messages ({
 
 	'sourire13':{
 		title:'Mauvais choix',
-		body: 'Le "voilà" est un bon indicateur de fin de discours. Pour plus de détail, tu peux te référer à Sauvayre (2013).',
+		body: 'Le "voilà" est un bon indicateur de fin de discours. Pour plus de détail, tu peux te référer à <a href=https://www.cairn.info/les-methodes-de-l-entretien-en-sciences-sociales--9782100579709-page-49.htm target="_blank">Sauvayre (2013)</a>.',
 	},
 
 	'conseil14':{
@@ -321,7 +321,7 @@ monogatari.script ({
 	],
 
 	'moyenEndroit':[
-		'stop muscic début',
+		'stop music début',
 		'play music biblio with loop',
 		'show message moyenEndroit',
 		'show scene university with fadeIn',
