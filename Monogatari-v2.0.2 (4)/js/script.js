@@ -1102,7 +1102,7 @@ monogatari.script ({
 ],
 
 'bibliographie':[
-	'a Tu trouveras la bibliographie dans le readme du jeu qui est accessible dans les crédits quand tu reviendras à la page d’accueil !',
+	'a Tu trouveras la bibliographie dans le readme du GitHub du jeu qui est accessible dans les crédits quand tu reviendras à la page d’accueil ou dans le descriptif du jeux!',
 	'a Thank you for playing, comme ils disent.',
 	'end',
 ],
