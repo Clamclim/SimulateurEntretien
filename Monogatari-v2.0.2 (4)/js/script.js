@@ -471,7 +471,7 @@ monogatari.script ({
 'question4':[
 	'show character c talk',
 	'c Alors oui, ce n’est pas facile, nous faisons plus de choses que ce que certains croient! Avant l’ouverture, nous devons vérifier les comptes des caisses, regarder si des directives spéciales sont à l’ordre du jour.', 
-	' c Une fois en caisse, les heures ne se ressemblent pas. Les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
+	'c Une fois en caisse, les heures ne se ressemblent pas. Les heures creuses et les heures de rush ont des activités différentes. Les heures creuses, c’est pas comme si on ne faisait rien non plus...',
 	'show character c normal',
 	{
 		'Choice':{
