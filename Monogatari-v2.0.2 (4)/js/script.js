@@ -306,7 +306,13 @@ monogatari.script ({
 	
 				'Dans un café':{
 					'Text': 'Dans un café',
-					'Do' : 'jump bonEndroit'
+					'Do' : 'jump bonEndroit',
+					'onChosen': function (){
+						monogatari.storage().score = point+1
+
+
+					}
+					
 				},
 			}
 		}	
@@ -352,6 +358,11 @@ monogatari.script ({
 			'précision':{
 				'Text': 'Oui',
 				'Do': 'jump précision',
+				'onChosen': function (){
+					monogatari.storage().score = point+1
+
+
+				}
 			},
 			'noPrécision':{
 				'Text': 'Non',
