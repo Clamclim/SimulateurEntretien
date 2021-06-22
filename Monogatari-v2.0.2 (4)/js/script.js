@@ -357,7 +357,7 @@ monogatari.script ({
 				'Text': 'Oui',
 				'Do': 'jump précision',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -404,7 +404,7 @@ monogatari.script ({
 				'Text': 'Comment êtes-vous devenue caissière ?',
 				'Do': 'jump comment',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -438,7 +438,7 @@ monogatari.script ({
 				'Text': 'Vous avez toujours travaillé à la caisse ?',
 				'Do': 'jump question3',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -473,7 +473,7 @@ monogatari.script ({
 				'Text':'Est-ce que vous pourriez essayer de nous décrire une journée type ?',
 				'Do':'jump question4',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			}
@@ -500,7 +500,7 @@ monogatari.script ({
 				'Text':'*Sourire et hocher la tête*',
 				'Do':'jump question5',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -543,7 +543,7 @@ monogatari.script ({
 				'Text':'Comment vivez-vous au quotidien cette course perpétuelle ?',
 				'Do':'jump question6',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -570,7 +570,7 @@ monogatari.script ({
 				'Text':'Vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 				'Do':'jump question7',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -602,7 +602,7 @@ monogatari.script ({
 				'Text':'Pour être sûr, c’est bien d’une tendinite du poignet dont il s’agit?',
 				'Do':'jump question8',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -637,7 +637,7 @@ monogatari.script ({
 				'Text':'À propos de vos supérieurs, comment qualifieriez-vous votre rapport avec eux ?',
 				'Do':'jump nonDirectif',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -672,7 +672,7 @@ monogatari.script ({
 				'Text':'Demande de développer',
 				'Do':'jump question10',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -713,7 +713,7 @@ monogatari.script ({
 				'Text':'Comment se passent les relations avec les clients ?',
 				'Do':'jump choixmultiple11A',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -721,7 +721,7 @@ monogatari.script ({
 				'Text':'Comment se passent les relations entre collègues ?',
 				'Do':'jump choixmultiple11B',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -789,7 +789,7 @@ monogatari.script ({
 				'Text':'Et comment réagissez-vous quand il y a des clients désagréables ?',
 				'Do':'jump question14',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -817,7 +817,7 @@ monogatari.script ({
 				'Text':'Ok, je vois.',
 				'Do':'jump question15',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -860,7 +860,7 @@ monogatari.script ({
 				'Text':'Quel est votre salaire ?',
 				'Do':'jump salaire15',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -892,7 +892,7 @@ monogatari.script ({
 				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentielle, mais vous n’êtes pas obligée d’y répondre',
 				'Do':'jump justification15',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -931,7 +931,7 @@ monogatari.script ({
 				'Text':'Est-ce que vous vous voyez encore à ce poste dans 10 ans ?',
 				'Do':'jump QCM16A',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -939,7 +939,7 @@ monogatari.script ({
 				'Text':'Vous avez des craintes liées à votre profession actuellement ?',
 				'Do':'jump QCM16B',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -972,7 +972,7 @@ monogatari.script ({
 				'Text':'Vous avez peut-être encore quelque chose à ajouter ou vous voulez revenir sur une question ?',
 				'Do':'jump fincool',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -1012,7 +1012,7 @@ monogatari.script ({
 				'Text':'Il me semble avoir fait au mieux, le sujet ne peut pas s’épuiser aussi rapidement',
 				'Do':'jump refle1',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -1024,7 +1024,7 @@ monogatari.script ({
 				'Text':'Je ne peux rien y faire, on ne saura jamais tout de toute façon',
 				'Do':'jump refle3',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -1055,7 +1055,7 @@ monogatari.script ({
 				'Text':'Non',
 				'Do':'jump nonbecker',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -1063,7 +1063,7 @@ monogatari.script ({
 				'Text':'Oui',
 				'Do':'jump ouibecker',
 				'onChosen': function (){
-					monogatari.storage().score += 1
+					monogatari.storage().score.point += 1
 
 				}
 			},
@@ -1096,8 +1096,8 @@ monogatari.script ({
 ],
 
 'resultat':[
-	'a Tu as eu {{score.point}} sur 20, soit {{score.point}/20*100}%!',
-	'a Est-ce qu’il est pour autant possible de transposer ce score à la valeur de ton entretien?',
+	'a Tu as fait un score de {{score.point}} sur 20, en supposant que nos propositions sont les plus adaptées, ce qui est discutable.',
+	'a Est-ce qu’il est pour autant possible de transposer cette note à la valeur de ton entretien?',
     'jump bibliographie',
 ],
 
