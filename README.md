@@ -1,6 +1,6 @@
 
 
-Ce jeu vidéo avec objectif de médiation a été créer sur monogatari dans le cadre du cours [Développement de Jeux Vidéo 2D](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/README.md) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne.
+Ce jeu vidéo avec objectif de médiation a été créer sur monogatari dans le cadre du cours [Développement de Jeux Vidéo 2D](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/README.md) donné par Isaac Pante au semestre de printemps 2021 à l'Université de Lausanne, dans la section des sciences du langage et de l'information.
 
 Le jeu est disponible [en ligne.](https://falber.itch.io/simulateur-dentretiens)
 
