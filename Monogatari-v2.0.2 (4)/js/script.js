@@ -1005,16 +1005,16 @@ monogatari.script ({
 	'play music fin with loop',
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
-	'a L’entretien se termine avec un savoir incomplet, que penses-tu de cette situation ?',
+	'a Est-ce que tu penses avoir choisi les bonnes réponses ?',
+	'a Tu as fait un score de {{score.point}} sur 20, en supposant que nos propositions sont les plus adaptées, ce qui est discutable.',
+	'a Est-ce qu’il est pour autant possible de transposer cette note à la valeur de ton entretien ?',
+	'a En effet, quelque soit ton score, un entretien se termine souvent avec un savoir incomplet, que penses-tu de cette situation ?',
 	{
 		'Choice':{
 			'refle1':{
 				'Text':'Il me semble avoir fait au mieux, le sujet ne peut pas s’épuiser aussi rapidement',
 				'Do':'jump refle1',
-				'onChosen': function (){
-					monogatari.storage().score.point += 1
-
-				}
+				
 			},
 			'refle2':{
 				'Text':'Si j’avais mieux mené l’entretien, ça ne serait pas le cas',
@@ -1023,10 +1023,7 @@ monogatari.script ({
 			'refle3':{
 				'Text':'Je ne peux rien y faire, on ne saura jamais tout de toute façon',
 				'Do':'jump refle3',
-				'onChosen': function (){
-					monogatari.storage().score.point += 1
 
-				}
 			},
 		}
 	}
@@ -1054,18 +1051,12 @@ monogatari.script ({
 			'nonbecker':{
 				'Text':'Non',
 				'Do':'jump nonbecker',
-				'onChosen': function (){
-					monogatari.storage().score.point += 1
-
-				}
+			
 			},
 			'ouibecker':{
 				'Text':'Oui',
 				'Do':'jump ouibecker',
-				'onChosen': function (){
-					monogatari.storage().score.point += 1
-
-				}
+				
 			},
 		}
 	}
@@ -1092,12 +1083,6 @@ monogatari.script ({
 	'a Tu trouveras dans la bibliographie les références exactes, mais nous pouvons signaler d’autre matériaux de vulgarisation non utilisé ici, comme le compte rendu d’un séminaire de direction d’entretien par Marion Ink (https://mastersociologie.hypotheses.org/3342)',
 	'a Si tu souhaites enquêter sur des milieux dominants, où les réflexions sur la violence symbolique prennent un tout autre sens, nous pouvons par exemple conseiller l’article de Laurens (2007) : " "Pourquoi et comment poser les questions qui fâchent ? " Réflexion sur les dilemmes récurrents que posent les entretiens avec les imposants". Ou encore l’ouvrage d’introduction des Pinçon-Charlot : "Voyage en grande bourgeoisie: Journal d’enquête". (2005).',
     'a L’article de Meyer (1995) est une critique foudroyante du livre dirigé par Bourdieu, mais la Misère du Monde reste intéressante à feuilleter pour, entre autres, les entretiens à la retranscription bien plus complète qu’il est d’usage.',
-    'jump resultat',
-],
-
-'resultat':[
-	'a Tu as fait un score de {{score.point}} sur 20, en supposant que nos propositions sont les plus adaptées, ce qui est discutable.',
-	'a Est-ce qu’il est pour autant possible de transposer cette note à la valeur de ton entretien?',
     'jump bibliographie',
 ],
 
