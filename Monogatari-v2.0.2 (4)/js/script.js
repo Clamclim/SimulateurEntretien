@@ -134,6 +134,11 @@ monogatari.action ('message').messages ({
 		title:'Missclick',
 		body: 'Cela arrive même au meilleur, pas de soucis, voici le texte tant attendu.',
 	},
+
+	'résultat':{
+		title:'Résultat de ton entretien',
+		body:'Au total, tu as un score de {{score.point}} sur 18. Tu gagnais un point supplémentaire à chaque bonne réponse choisie.'
+	}
 });
 
 // Define the notifications used in the game
@@ -1006,6 +1011,7 @@ monogatari.script ({
 	'show scene house with fadeIn',
 	'a Tu viens de rentrer chez toi et tu penses à l’entretien qui vient de se dérouler...',
 	'a Est-ce que tu penses avoir choisi les bonnes réponses ?',
+	'show message résultat',
 	'a Tu as fait un score de {{score.point}} sur 18, en supposant que nos propositions sont les plus adaptées, ce qui est discutable.',
 	'a Est-ce qu’il est pour autant possible de transposer cette note à la valeur de ton entretien ?',
 	'a En effet, quelque soit ton score, un entretien se termine souvent avec un savoir incomplet, que penses-tu de cette situation ?',
