@@ -51,8 +51,8 @@ Clémence Danesi et Antonin Wyss
 ### contact
 
 
-clemence.danesi at unil dot ch
-antonin.wyss at unil dot ch
+clemence.danesi@unil.ch
+antonin.wyss@unil.ch 
 
 
 
