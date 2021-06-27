@@ -1,10 +1,12 @@
 
-
 Ce jeu vidéo a été crée sur monogatari dans le cadre du cours [Développement de Jeux Vidéo 2D](https://github.com/ipante/ressources_cours_jeux_video_2D/blob/master/README.md). Le cours a été donnée par Isaac Pante à l'Université de Lausanne, dans la section des sciences du langage et de l'information. 
 
 Le jeu est disponible [en ligne.](https://falber.itch.io/simulateur-dentretiens)
 
 # Visual-Novel 
+
+![README image](https://user-images.githubusercontent.com/79465319/123553363-0af96d80-d77b-11eb-981c-49e0e3cffe21.png)
+
 
 ## Simulateur d'entretien - caissière
 
