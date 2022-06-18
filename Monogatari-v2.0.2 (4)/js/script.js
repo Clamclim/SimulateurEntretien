@@ -21,7 +21,7 @@ monogatari.action ('message').messages ({
 
 	'noPrécision':{
 		title:'Plutôt deux fois qu’une',
-		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregsitré et anonymisé afin d’éviter toutes mauvaises surprises.',
+		body:' La personne a pu oublier ou vouloir des précisions sur les termes. Il est nécessaire de rappeler que l’entretien sera enregistré et anonymisé afin d’éviter toutes mauvaises surprises.',
 	},
 
 	'pourquoi':{
@@ -589,7 +589,7 @@ monogatari.script ({
 
 'horsSujet':[
 	'show character c happy',
-	'c Skippy, c’est une Berger Eurasiatique de pure race, mais attention contairement à la pluspart des Eura, elle...',
+	'c Skippy, c’est une Berger Eurasiatique de pure race, mais attention contrairement à la plupart des Eura, elle...',
 	'show message horsSujet',
 	'b Pour revenir sur le sujet, vous avez remarqué certaines pénibilités communes avec vos collègues ?',
 	'show character c normal',
@@ -736,7 +736,7 @@ monogatari.script ({
 
 'choixmultiple11A':[
 	'show character c talk',
-	'c Ça dépend certains sont très polis mais dès qu’ils s’impatientent parce qu’il y a du monde à la caisse, ça devient compliqué. Que l’on fasse une erreur ou pas, on se sent coupable de faire attendre le client. La semaine dernière j’ai craqué. Je n’en pouvais plus, j’avais pleins de problèmes en caisse et les clients ont été odieux, ils sont impatients, vous insultent, râlent et c’est très dur à supporter.',
+	'c Ça dépend certains sont très polis mais dès qu’ils s’impatientent parce qu’il y a du monde à la caisse, ça devient compliqué. Que l’on fasse une erreur ou pas, on se sent coupable de faire attendre le client. La semaine dernière j’ai craqué. Je n’en pouvais plus, j’avais plein de problèmes en caisse et les clients ont été odieux, ils sont impatients, vous insultent, râlent et c’est très dur à supporter.',
 	'jump question12',
 ],
 'choixmultiple11B':[
@@ -894,7 +894,7 @@ monogatari.script ({
 				'Do':'jump excuse15',
 			},
 			'justification15':{
-				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentielle, mais vous n’êtes pas obligée d’y répondre',
+				'Text':'Pour notre enquête, c’est une information qui peut se révéler utile pour la comparaison et cela reste confidentiel, mais vous n’êtes pas obligée d’y répondre',
 				'Do':'jump justification15',
 				'onChosen': function (){
 					monogatari.storage().score.point += 1
@@ -1014,7 +1014,7 @@ monogatari.script ({
 	'show message résultat',
 	'a Tu as fait un score de {{score.point}} sur 18, en supposant que nos propositions sont les plus adaptées, ce qui est discutable.',
 	'a Est-ce qu’il est pour autant possible de transposer cette note à la valeur de ton entretien ?',
-	'a En effet, quelque soit ton score, un entretien se termine souvent avec un savoir incomplet, que penses-tu de cette situation ?',
+	'a En effet, quel que soit ton score, un entretien se termine souvent avec un savoir incomplet, que penses-tu de cette situation ?',
 	{
 		'Choice':{
 			'refle1':{
