@@ -66,12 +66,12 @@ monogatari.action ('message').messages ({
 
 	'directif':{
 		title:'Imposition de la thématique',
-		body: 'Parfois les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici, tu suggères fortement une manière de répondre à ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de <a href=https://www.persee.fr/doc/rfsoc_0035-2969_1995_num_36_2_4407 target="_blank">Mayer (1996)</a> adressée à Bourdieu sur une imposition de termes est proche de la situation.',
+		body: 'Parfois, les gens n’ont pas le même bagage que toi pour décrire leur situation. Ici, tu suggères fortement une manière de répondre à ton interviewée, il serait mieux de la laisser expliquer la situation avec ses mots. La critique de <a href=https://www.persee.fr/doc/rfsoc_0035-2969_1995_num_36_2_4407 target="_blank">Mayer (1996)</a> adressée à Bourdieu sur une imposition de termes est proche de la situation.',
 	},
 
 	'avis':{
 		title:'Pas de débat',
-		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec tes idéaux, l’entretien n’est pas un lieu de débat, tu es ici pour écouter ce que la personne a à te dire et non juger ses choix de vie. Tu seras au courant pour la prochaine fois.',
+		body: 'Laura est partie. Même si la personne tient des propos qui ne sont pas en accord avec tes idéaux, l’entretien n’est pas un lieu de débat. Tu es ici pour écouter ce que la personne a à te dire et non juger ses choix de vie. Tu seras au courant pour la prochaine fois.',
 	},
 
 	'GenreF':{
@@ -101,7 +101,7 @@ monogatari.action ('message').messages ({
 
 	'exigence15':{
 		title:'Le tact',
-		body: 'C’est vrai, mais lorsque la personne se montre réticente, essayer d’arrondir les angles est utile. Il ne faut pas oublier que ce n’est pas un interrogatoire et que la personne prend de son temps pour nous aider. Elle ne nous doit rien.',
+		body: 'C’est vrai. Cependant, lorsque la personne se montre réticente, essayer d’arrondir les angles est utile. Il ne faut pas oublier que ce n’est pas un interrogatoire et que la personne prend de son temps pour nous aider. Elle ne nous doit rien.',
 	},
 
 	'indiscret15':{
@@ -127,7 +127,7 @@ monogatari.action ('message').messages ({
 
 	'refle3':{
 		title:'Un savoir fragmenté',
-		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie social est tout de même possible.',
+		body: 'La connaissance absolue n’est pas l’objectif, mais mieux comprendre quelques facettes de la vie sociale est tout de même possible.',
 	},
 
 	'nonbecker':{
@@ -736,12 +736,12 @@ monogatari.script ({
 
 'choixmultiple11A':[
 	'show character c talk',
-	'c Ça dépend certains sont très polis mais dès qu’ils s’impatientent parce qu’il y a du monde à la caisse, ça devient compliqué. Que l’on fasse une erreur ou pas, on se sent coupable de faire attendre le client. La semaine dernière j’ai craqué, je n’en pouvais plus, j’avais pleins de problèmes en caisse et les clients ont été odieux, ils sont impatients, vous insultent, râlent et c’est très dur à supporter.',
+	'c Ça dépend certains sont très polis mais dès qu’ils s’impatientent parce qu’il y a du monde à la caisse, ça devient compliqué. Que l’on fasse une erreur ou pas, on se sent coupable de faire attendre le client. La semaine dernière j’ai craqué. Je n’en pouvais plus, j’avais pleins de problèmes en caisse et les clients ont été odieux, ils sont impatients, vous insultent, râlent et c’est très dur à supporter.',
 	'jump question12',
 ],
 'choixmultiple11B':[
 	'show character c talk',
-	'c C’est chouette. On se soutient beaucoup parmi, quand il n’y a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués...',
+	'c C’est chouette. On se soutient beaucoup parmi. Quand il n’y a pas trop de clients aux caisses on peut discuter entre nous et se faire des blagues pour garder le moral parce que des fois il y a des clients compliqués...',
 	'jump question12',
 ],
 
@@ -960,7 +960,7 @@ monogatari.script ({
 'QCM16B':[
 	'show character c talk',
 	'c C’est vrai que quand les caisses automatiques sont arrivées, on savait pas trop comment ça allait se passer...',
-	'c Mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours donc aujourd’hui ça m’inquiète pas trop.',
+	'c Mais au final, moi je continue de gérer ma caisse et les clients y viennent toujours. Donc aujourd’hui ça m’inquiète pas trop.',
 	'jump question17',
 ],
 
